@@ -1690,11 +1690,11 @@ option</p>
 <p>git commit –amend -m “New commit message”</p>
 <p><strong>Undo last commit</strong></p>
 <p>git reset HEAD~</p>
-<p><strong>Push(upload) to an existing branch (write in this way to use
-saved credentials)</strong></p>
-<p><code>git push origin NS:nilotpalsanyal/BHMSMAfMRI main</code></p>
+<p><strong>Push(upload) to an existing branch</strong></p>
+<p><code>git push origin branchname</code><br></p>
 <p><strong>Push (upload) to a new branch</strong></p>
-<p><code>git push origin NS:nilotpalsanyal/BHMSMAfMRI newbranchname</code></p>
+<p><code>git push origin NS:username/reponame branchname</code> #replace
+NS by your local host id</p>
 <pre><code>=&gt;NOTE: Clone: Copy online repository to local computer 
         Commit: Modify files in your repository and track changes
         Push: copy changes in local computer to online repository</code></pre>
@@ -1712,8 +1712,8 @@ saved credentials)</strong></p>
 <p><code>git push origin --delete branchname</code></p>
 <p><strong>Check files/folders in .gitignore list (these are not
 pushed)</strong></p>
-<p><code>git check-ignore *</code> <strong>Add/Remove files to/from
-ignore-list</strong></p>
+<p><code>git check-ignore *</code></p>
+<p><strong>Add/Remove files to/from ignore-list</strong></p>
 <p><code>Simply edit the .gitignore file</code></p>
 <p><strong>After adding a file to ignore-list, remove it (previous
 uploads) from the remote</strong></p>
@@ -1722,7 +1722,7 @@ caches of this file from git, does not delete the file <br>
 <code>git add .</code> #add everything afresh. This file won’t be added
 now as it is in ignore-list <br>
 <code>git commit -m &quot;removed unwanted files&quot;</code> <br>
-<code>git push origin NS:nilotpalsanyal/BHMSMAfMRI branchname</code></p>
+<code>git push origin branchname</code></p>
 <p><strong>Pull a file from local branch Sub to local branch
 main</strong></p>
 <p>git checkout main git checkout Sub – filename</p>
