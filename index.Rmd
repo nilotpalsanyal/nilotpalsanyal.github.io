@@ -1,5 +1,5 @@
 ---
-title: Home
+title: Nilotpal Sanyal
 author:
 output:
  html_document:
@@ -22,35 +22,40 @@ knitr::opts_chunk$set(echo = T)
 
 <style type="text/css"> /* This sets the overall width of the HTML page */
 .main-container {
-  max-width: 670px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 };
 p {line-height: 4em;}
 </style>
 
+<div align="right">
+<img src="pics/profile_pic.jpg" style="width:130px;" />
+</div>
+
+
+# Home {.tabset}
+
+## Bio
+
+## Research
+
+## Teaching
+
+
 
 
 
 <hr>
 
-<a href="karmabad-o-punorjonmobad.html">কর্মবাদ ও পুনর্জন্মবাদ</a>
+<!-- <a href="karmabad-o-punorjonmobad.html">কর্মবাদ ও পুনর্জন্মবাদ</a> -->
 
-<a href="sriramakrishna-vidyasagar-conversation.html">শ্রীরামকৃষ্ণের সঙ্গে শ্রী ঈশ্বরচন্দ্র বিদ্যাসাগরের কথোপকথন</a>
+<!-- <a href="sriramakrishna-vidyasagar-conversation.html">শ্রীরামকৃষ্ণের সঙ্গে শ্রী ঈশ্বরচন্দ্র বিদ্যাসাগরের কথোপকথন</a> -->
 
 
 
 
 <hr><br>
-
-```{r, eval = F, include = F}
-	# Create Rmd html result
-	rm(list=ls())
-	dir = "/Users/nsanyal/Documents/GitHub/nilotpalsanyal.github.io/"
-	setwd(dir)
-	library(rmarkdown)
-	render( input="index.Rmd" )
-```
 
 
 
