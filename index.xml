@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>https://nilotpalsanyal.github.io/</link>
+    <description>Recent content on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://nilotpalsanyal.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title> </title>
+      <link>https://nilotpalsanyal.github.io/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nilotpalsanyal.github.io/</guid>
+      <description>Hello, I am Nilotpal Sanyal. Welcome to the my webpage. Have a look around. Make yourself comfortable.
+I am professionally a statistician / bio-statistician, currently working on
+High-dimensional methods for competing risks data with cure fraction. Non-local prior mixtures for data with highly dispersed effect sizes. Alongside academic research I have multifarious interests (as you can see above). Feel free to explore, comment and connect.</description>
+    </item>
+    
+  </channel>
+</rss>

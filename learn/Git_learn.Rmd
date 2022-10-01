@@ -1,0 +1,367 @@
+---
+title: "Learn Git and GitHub management"
+author: "Nilotpal Sanyal  \n\n [https://nilotpalsanyal.github.io](https://nilotpalsanyal.github.io)"
+output: 
+ html_document:
+  # code_folding: show
+  toc: true
+  toc_depth: 3           
+  toc_float: TRUE
+  number_sections: no   
+  # theme: united     
+  highlight: tango     
+urlcolor: blue
+citecolor: blue
+---
+
+<!-- # set the overall width of the HTML page -->
+<style type="text/css"> /* This sets the overall width of the HTML page */
+  .main-container {
+    max-width: 600px;   
+    /*margin-left: 5%;*/
+    margin-right: 10%;
+  }
+  body, td {
+     font-size: 16.5px;
+     font-family: Calibri;
+     background: rgb(250,250,250);
+  }
+  code.r{                   /*for r code*/
+    font-size: 16.5px;
+  }
+  pre {                 /*for output of knitr chunks*/
+    font-size: 16.5px
+    border: 0;
+  }
+</style>
+
+<hr>
+
+Here's a precise manual I put together for convenient learning of Git and GitHub <br>management and as an easy reference.
+
+<hr>
+
+
+$$\\[0.4in]$$
+
+### Install And Link (in Mac)
+
+**Install git**
+
+`brew install git`
+
+**Upgrade git**
+
+`brew upgrade git`
+
+**Create git link**
+
+`brew link git`     #after this step, typing 'git' in terminal will work
+
+**Unlink git**
+
+`brew unlink git `
+
+**See git version**
+
+`git --version`
+
+**Get list of all git commands**
+
+`git help -a`
+
+**Get list of git concept guides**
+
+`git help -g`
+
+**Read about a specific command/concept**
+
+`git help commandname` / `git help conceptname`
+
+**Get overall introduction on git**
+
+`git help git`
+
+**Git online documentation**
+
+[https://git-scm.com/docs](https://git-scm.com/docs){target="_blank"}
+
+$$\\[1in]$$
+
+
+
+### Configure
+
+**Initialize a local git repository** *(creates .git folder in the current directory)*
+
+`git init`
+
+**Configure git** *(set/unset user names and emails at system, global and local levels)*
+
+`git config --system user.name "Macbook pro"` <br>
+`git config --global user.name "nilotpalsanyal"` <br>
+`git config --local user.name "BHMSMAfMRI"`
+
+    =>NOTE: Using system option configures for *all users* in the system 
+            (laptop) [[path]/etc/gitconfig file]. As this is a system 
+            configuration file, you would need administrative/superuser 
+            privilege to make changes to it. Using global option configures for 
+            a *specific user* in the system. [~/.gitconfig or ~/.config/git/
+            config file]. This affects all of the repositories you work with on 
+            your system.) Using local option configures for a *specific user* 
+            in the system.[.git/config file of any repository] (specific to 
+            that single repository. You can force Git to read from and write to
+            this file with the -- local option, but that is in fact the 
+            default. Unsurprisingly, you need to be located somewhere in a Git 
+            repository for this option to work properly.) Each level overrides 
+            values in the previous level.
+          
+
+**See configured user names and emails** *(at system, global and local levels)*
+
+`git config --system --list` <br>
+`git config --global --list` <br>
+`git config --local --list`
+
+**Unset some configuration** *(or simply edit the config text file)*
+
+`git config --global --unset user.name`
+
+$$\\[1in]$$
+
+
+
+### Set-up SSH
+
+**Create/generate SSH key**
+
+`ssh-keygen -t ed25519 -C "comment"`
+
+    =>NOTE: After running the above, keep on pressing Enter to avoid setting
+            passphrase till the key's randomart image appears. There are 4 
+            generation methods for a random ssh key dsa--ecdsa, ed25519, rsa, 
+            the last one being default. Github recommends ed25519) ssh-keygen 
+            by default writes keys in an OpenSSH-specific format. This format 
+            is preferred as it offers better protection for keys at rest as 
+            well as allowing storage of key comments (-C) within the private 
+            key file itself. The key comment may be useful to help identify 
+            the key. The comment is initialized to "user@host" when the key is 
+            created, but can be changed using the -c option. 
+
+**Add SSH private key to the SSH-agent**
+
+`eval "$(ssh-agent -s)"`    # start the ssh-agent in the background <br>
+`ssh-add ~/.ssh/id_ed25519`
+
+$$\\[1in]$$
+
+
+
+### Repository
+
+**Connect a remote repository (URL) and give it an alias/nickname 'origin'**
+
+`git remote add origin https://github.com/nilotpalsanyal/GWASinlps.git` #Using HTTPS
+
+`git remote add origin git@github.com:nilotpalsanyal/GWASinlps.git`     #Using SSH
+
+    =>NOTE: In git, "origin" is an alias/shorthand name for the remote    
+            repository that a project was originally cloned from. No need to  
+            name the remote repository origin. In fact, the same repository 
+            could have a different alias for another developer.
+
+**Check alias of the remote repo(s) in your local system**
+
+`git remote`
+
+**Check what URL belongs to each remote and more information**
+
+`git remote -v` <br>
+`git remote show origin`
+
+**Rename the remote alias 'origin' to 'mynewalias'**
+
+`git remote rename origin mynewalias`
+
+**Change the URL in the origin**
+
+git remote set-url origin newurl_here
+
+**Fetch commits from a remote repo/branch** <br>
+(of a connected repo locally aliased origin)
+
+`git fetch origin`  #fetches info about all branches of the remote
+
+`git fetch origin branchname`   #fetches info about the given branch of the remote
+
+    =>NOTE: It gathers any commits from the target branch that do not 
+            exist in the current branch and stores them in your local 
+            repository. However, it does not merge them with your 
+            current branch.
+
+**Merge fetched commits from a remote branch with local branch** <br>
+(from a connected repo locally aliased origin)
+
+`git merge origin branchname`
+
+**Reset merge in case of conflict**
+
+git reset --merge
+
+**Pull files from a remote branch to local branch**
+(from a connected repo locally aliased origin)
+
+`git pull origin branchname`
+
+    =>NOTE: `pull` is `fetch` + `merge`.
+
+**Push local branch files to a remote branch**
+(of a connected repo)
+
+`git push NS:nilotpalsanyal/BHMSMAfMRI main`
+
+`git push -u origin main`
+
+$$\\[1in]$$
+
+
+
+### Branches
+
+**See current branch**
+
+`git branch --show-current`
+
+    =>NOTE: When inside a directory you initialize git with `git init`, the
+            default branch that gets created is named master. Check it by 
+            this command. The reference of this default branch (or all other
+            branches) is written inside the file .git/HEAD. Note that, 
+            you cannot delete the default branch or the last existing branch 
+            by any git command, can only rename it.
+
+**See all local and remote branches**
+
+`git branch` / '-a' / `-all` / `--list`    #all branches <br>
+`git branch -r`                            #remote branches <br>
+`git branch -l`                            #local branches
+
+
+    =>NOTE: You need to make at least one commit before you can see 
+            branches listed by the `git branch` command. If no commit
+            yet, can be seen only using --show-current option.
+
+**Create a new local branch**
+
+`git branch branchname`
+
+**Create a new local branch from a remote branch of repo origin**
+
+`git branch newbranch origin/remotebranch`
+
+**Rename a branch**
+
+`git branch -m AA`      #renames the current branch as AA  <br>
+`git branch -m BB CC`   #renames branch BB as CC
+
+**Use/Move to a branch**
+
+`git checkout branchname` / `git switch branchname`
+
+**Remove a branch reference**
+
+`rm .git/refs/heads/branchname`
+
+**Create a file**
+
+`touch filename`
+
+**Check if any file in current folder (local branch) is modified**
+
+`git status`
+
+**If a file is modified but not yet staged, can remove the modification**
+
+`git checkout filename`   #a second use of checkout option
+
+**Place the modified file(s) in a staging area**
+
+`git add filename` <br>
+`git add -f filename`   #if filename is listed in ignore-list, you can add using -f <br>
+`git add .`
+
+**Commit the change**
+
+`git commit -m "update"`
+
+    =>NOTE: Commit means to take everything from the staging area and make a
+            permanent snapshot of the current state of your repository that is
+            associated with a unique identifier.
+
+**Edit the message of the last commit**
+
+git commit --amend -m "New commit message"
+
+**Undo last commit**
+
+git reset HEAD~
+
+**Push(upload) to an existing branch (write in this way to use saved credentials)**
+
+`git push origin NS:nilotpalsanyal/BHMSMAfMRI main`
+
+**Push (upload) to a new branch**
+
+`git push origin NS:nilotpalsanyal/BHMSMAfMRI newbranchname`
+
+    =>NOTE: Clone: Copy online repository to local computer 
+            Commit: Modify files in your repository and track changes
+            Push: copy changes in local computer to online repository
+
+**See existing references**
+
+`git show-ref`
+
+    =>NOTE: A ref is an indirect way of referring to a commit. You can think of
+            it as a8-friendly alias for a commit hash. Due to the recent 
+            "Replacing master with main in GitHub" action, you may notice that 
+            there is a refs/heads/main.
+
+**Delete a local branch**
+
+git branch -d branchname
+
+    =>NOTE: You cannot delete a branch while using it. Have to move to another
+            branch first.
+
+**Delete a remote branch**
+
+`git push origin --delete branchname`
+
+**Check files/folders in .gitignore list (these are not pushed)**
+
+`git check-ignore *
+`
+**Add/Remove files to/from ignore-list**
+
+`Simply edit the .gitignore file`
+
+**After adding a file to ignore-list, remove it (previous uploads) from the remote**
+
+`git rm -r --cached filename`   #this removes only the caches of this file from git, does not delete the file <br>
+`git add .`   #add everything afresh. This file won't be added now as it is in ignore-list <br>
+`git commit -m "removed unwanted files"` <br>
+`git push origin NS:nilotpalsanyal/BHMSMAfMRI branchname`
+
+**Pull a file from local branch Sub to local branch main**
+
+git checkout main
+git checkout Sub -- filename
+
+$$\\[1in]$$
+
+
+    
+
+
+
+

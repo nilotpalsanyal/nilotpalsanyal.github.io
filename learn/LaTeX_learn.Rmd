@@ -1,0 +1,665 @@
+---
+title: "Learn LaTeX"
+author: "Nilotpal Sanyal  \n\n [https://nilotpalsanyal.github.io](https://nilotpalsanyal.github.io)"
+output: 
+ html_document:
+  # code_folding: show
+  toc: true
+  toc_depth: 3           
+  toc_float: TRUE
+  number_sections: no   
+  # theme: united     
+  highlight: tango     
+urlcolor: blue
+citecolor: blue
+---
+
+<!-- # set the overall width of the HTML page -->
+<style type="text/css"> /* This sets the overall width of the HTML page */
+  .main-container {
+    max-width: 600px;   
+    /*margin-left: 5%;*/
+    margin-right: 10%;
+  }
+  body, td {
+     font-size: 16.5px;
+     font-family: Calibri;
+     background: rgb(250,250,250);
+  }
+  code.r{                   /*for r code*/
+    font-size: 16.5px;
+  }
+  pre {                 /*for output of knitr chunks*/
+    font-size: 16.5px
+    border: 0;
+  }
+</style>
+
+<hr>
+
+Here's a precise manual I put together for convenient learning of LaTeX document writing <br>and as an easy reference.
+
+<hr>
+
+
+$$\\[0.2in]$$
+
+### Online documentation
+
+[https://www.latex-project.org/help/documentation/](https://www.latex-project.org/help/documentation/){target="_blank"}
+
+[https://www.overleaf.com/learn](https://www.overleaf.com/learn)
+
+$$\\[0.4in]$$
+
+
+
+
+### Document-class settings
+
+**Set document-class**
+
+```
+% class article for articles in scientific journals, presentations, short reports, program documentation
+\documentclass[14pt]{article}
+
+% use extarticle class for getting font sizes 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, 20pt
+\documentclass[14pt]{extarticle} 
+
+% class beamer for presentations
+\documentclass{beamer}
+
+% class memoir for fiction, non-fiction and mathematical books  
+\documentclass[17pt,twoside,onecolumn,extrafontsizes]{memoir}
+
+% class book for books
+\documentclass{book}
+```
+
+$$\\[0.4in]$$
+
+
+
+
+### Page and Text settings
+
+**Set page and text area / margins / header-footer**
+
+```
+\setlength{\topmargin}{-1cm}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+\setlength{\textwidth}{6.5in}
+\setlength{\textheight}{8.7in}
+\setheadfoot{\baselineskip}{0pt}  %for memoir documentclass
+\setlength{\footskip}{9pt}
+```
+
+**Set / change document font**
+
+```
+\usepackage{fontspec} % Need to run with XeLaTeX or LuaLaTeX
+\setmainfont{Times New Roman}  %Arial, Georgia, Baskerville, Times New Roman, Calibri, Lucida Grande, Verdana
+```
+
+**Add header on each page**
+
+```
+\usepackage{fancyhdr} 
+\pagestyle{fancy}
+```
+
+**Link contents in page header**
+
+```
+\fancyhead[R]{ \hyperlink{TOC}{Contents} }  
+```
+
+**Change page background color**
+
+```
+\usepackage{pagecolor}  %command \pagecolor{} must be loaded after package color or xcolor
+\pagecolor{gray!10}
+```
+
+**Define colors**
+
+```
+\usepackage{color, colortbl}
+\definecolor{lg}{rgb}{.69,1,.40}  % define new color lg using rgb soecs
+\definecolor{lp}{rgb}{1,.80,.11}
+```
+
+**Insert a landscape page somewhere**
+
+```
+\usepackage{pdflscape} 
+\begin{landscape}
+…
+\end{landscape}
+```
+
+$$\\[0.4in]$$
+
+
+
+
+### Line and Paragraph settings
+
+**Set line and paragraph spacing/breaking**
+
+```
+\setlength{\parindent}{0.5in}
+\setlength{\parskip}{.6cm}
+\renewcommand{\baselinestretch}{1}
+\tolerance=500
+```
+
+**Indent first paragraph of a section**
+
+```
+\usepackage{indentfirst}
+```
+
+**To obey the natural linebreaks in the text**
+
+First select all text, do Source-->Wrap-->Hard wrap. Then wrap text within obeylines environment 
+
+```
+\usepackage{parselines} 
+\begin{obeylines} 
+... 
+\end{obeylines} 
+```
+
+**Linebreak after paragraph name**
+
+```
+\paragraph{bla} \mbox{} \\
+bla bla bla
+```
+
+$$\\[0.4in]$$
+
+
+
+
+### Text formatting and display
+
+**To underline multiline text**
+
+```
+\usepackage{ulem}
+\uline{text}
+
+%or
+
+\usepackage{soul}
+\ul{text}
+```
+
+**Allow spacing in itemize/enumerate**
+
+```
+\usepackage{enumitem}
+```
+
+**Set enumerate/itemize topsep and leftmargin**
+
+```
+\usepackage{enumitem} 
+\begin{itemize}[topsep=0pt, leftmargin=0pt, itemsep=2pt, parsep=4pt]
+…
+\end{itemize}
+```
+
+**Make nested itemize**
+
+```
+\usepackage{outlines}  
+\begin{outline}
+\1
+ \2
+  \3
+\1
+\end{outline}
+```
+
+**Use various characters and symbols**
+
+```
+\usepackage{pifont}
+\newcommand{\cmark}{\ding{51}}
+\newcommand{\xmark}{\ding{55}}
+```
+
+**To hide/show text**
+
+```
+% write in preamble
+% To hide/unhide proofs
+\newif\ifhideproofs
+\hideproofstrue %uncomment to hide proofs
+\ifhideproofs %hide
+  \usepackage{environ}
+  \NewEnviron{hide}{}
+  \let\proof\hide
+  \let\endproof\endhide
+\else %show
+  \usepackage{environ}
+  \NewEnviron{hide}{\fbox{\parbox{\textwidth}{\BODY}}}
+\fi
+%
+
+%Then enclose text inside
+\begin{hide}
+…
+\end{hide}
+```
+
+**Write inline text in verbatim mode**
+
+```
+\texttt{text}
+```
+
+$$\\[0.4in]$$
+
+
+
+
+### Table of contents (TOC)
+
+**Set TOC depth**
+
+```
+\setcounter{tocdepth}{2}
+```
+
+**Create TOC without section-numbering**
+
+```
+\setcounter{secnumdepth}{0}
+```
+
+**set TOC skips**
+
+```
+\setlength{\cftbeforetoctitleskip}{35pt} % TOC: Table of Contents
+\setlength{\cftaftertoctitleskip}{-.5ex}
+\setlength{\cftbeforeloftitleskip}{35pt} % LOF: Listing of Figures
+\setlength{\cftbeforelottitleskip}{35pt} % LOT: Listing of Tables
+```
+
+**make spaced TOC**
+
+```
+\usepackage{tocloft}
+```
+
+$$\\[0.4in]$$
+
+
+
+
+### Defining / redefining functions
+
+**Define aliases for functions**
+
+```
+% copy the definition of \mathbb into \bb. \bb will not change 
+% even if you change \mathbb definition
+\let\bb\mathbb   
+
+% insert \mathbb wherever you use \bb; more akin to an alias. 
+% \bb will change with any changes to \mathbb
+\newcommand{\bb}{\mathbb}  
+```
+
+$$\\[0.4in]$$
+
+
+
+
+### Sectioning
+
+**Change section heading style**
+
+```
+\usepackage{titlesec}
+\titleformat*{\section}{\normalsize\bfseries}
+\titleformat*{\subsection}{\normalsize\bfseries}
+\titlespacing{\section}{0pt}{\parskip}{2mm}
+\titlespacing{\subsection}{0pt}{\parskip}{-\parskip}
+\titlespacing{\subsubsection}{0pt}{\parskip}{-\parskip}
+```
+
+**Set this option for memoir package to change section heading size**
+
+```
+\setsecheadstyle{\normalsize\bfseries}
+```
+
+**To define levels up to depth 100 after \subsubsection**
+
+```
+\makeatletter
+\newcommand\level[1]{%
+  \ifcase#1\relax\expandafter\chapter\or
+    \expandafter\section\or
+    \expandafter\subsection\or
+    \expandafter\subsubsection\else
+    \def\next{\@level{#1}}\expandafter\next
+  \fi}
+\newcommand{\@level}[1]{%
+  \@startsection{level#1}
+    {#1}
+    {\z@}%
+    {-3.25ex\@plus -1ex \@minus -.2ex}%
+    {1.5ex \@plus .2ex}%
+    {\normalfont\normalsize\bfseries}}
+
+\newcounter{level4}[subsubsection]
+\@namedef{thelevel4}{\thesubsubsection.\arabic{level4}}
+\@namedef{level4mark}#1{}
+\count@=4
+\loop\ifnum\count@<100
+  \begingroup\edef\x{\endgroup
+    \noexpand\newcounter{level\number\numexpr\count@+1\relax}[level\number\count@]
+    \noexpand\@namedef{thelevel\number\numexpr\count@+1\relax}{%
+      \noexpand\@nameuse{thelevel\number\count@}.\noexpand\arabic{level\number\numexpr\count@+1\relax}}
+    \noexpand\@namedef{level\number\numexpr\count@+1\relax mark}####1{}}
+  \x
+  \advance\count@\@ne
+\repeat
+\makeatother
+\setcounter{secnumdepth}{100}
+```
+
+**Avoid printing "Abstract" when using begin{abstract}**
+
+```
+\renewcommand{\abstractname}{}
+```
+
+$$\\[0.4in]$$
+
+
+
+
+### Referencing
+
+**Allow hyper-referencing**
+
+```
+\PassOptionsToPackage{hyphens}{url}\usepackage[hidelinks]{hyperref}  
+%hidelinks to suppress red box around links. 
+%hyphens option to allow linebreaks in url.
+
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+% for hyper to work properly define page break this way
+\newcommand{\sectionbreak}{\clearpage\phantomsection}   
+```
+
+$$\\[0.4in]$$
+
+
+
+
+### Figures
+
+**Wrap text around figure**
+
+```
+\usepackage{wrapfig}
+\begin{wrapfigure}[lineheight]{position}{width}
+..
+\enf{wrapfigure}
+```
+
+**Plot side-by-side figures with common caption**
+
+```
+\usepackage{subcaption}
+\begin{figure}
+\begin{subfigure}
+..
+\end{subfigure}
+\begin{subfigure}
+..
+\end{subfigure}
+\caption{}
+\end{figure}
+```
+
+**Trim an image**
+
+```
+\includegraphics[width=\textwidth,trim=0in 2in 3in 4in, clip]{image.jpg}  
+% trims 0in from left, 2in from bottom, 3in from right, 4in from top.
+```
+
+$$\\[0.4in]$$
+
+
+
+
+### Tables
+
+**Resize a table**
+
+```
+\scalebox{0.7}{
+\begin{tabular}
+…
+\end{tabular}
+}
+```
+
+**Color one cell of a table**
+
+```
+\cellcolor
+\newcommand{\ccol}{\cellcolor}   % define smaller name
+```
+
+**Get a dot instead of colon in table and figure captions**
+
+```
+\usepackage[labelsep=period]{caption}
+```
+
+**To center fixed-width arrays (m) in tabular**
+
+```
+\usepackage{array}
+\begin{tabular}{ >{\centering\arraybackslash}m{2cm} | >{\centering\arraybackslash}m{4cm} }
+```
+
+**Break a table across pages**
+
+```
+\usepackage{longtable}
+\begin{longtable}{lll}
+…
+\end{longtable}
+```
+
+$$\\[0.4in]$$
+
+
+
+
+### Mathematics mode
+
+**Redefine theorem / lemma environment**
+
+```
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+```
+
+**For derivatives and partial derivatives**
+
+```
+\usepackage{physics}   
+\dv{y}{x}  %for derivatives  
+\pdv{y}{x1}  %for partial derivatives
+```
+
+**Allow breaks in inline math mode**
+
+```
+$ bla bla bla \allowbreak bla bla bla $
+```
+
+**Allow pagebreak in long equation arrays**
+
+```
+\allowdisplaybreaks  
+```
+
+**Do not break line within mathmode**
+
+```
+Enclose expression within {}, e.g. ${a+b+c=2}$.
+```
+
+**Background shade of a block of text**
+
+```
+\usepackage{mdframed}  
+\begin{mdframed}[backgroundcolor=blue!20] 
+... 
+\end{mdframed}
+```
+
+**Adjust width of any text/math block**
+
+```
+\usepackage{changepage}  
+\begin{adjustwidth}{-2cm}{}
+…
+\end{adjustwidth}
+```
+
+**Cross out an expression**
+
+```
+\usepackage{cancel} 
+\cancel{x^2}
+```
+
+**Spacing in math mode**
+
+```
+% various degree of spacing from minimum to maximum
+f(x) = x\! + 2 
+f(x) = x + 2 
+f(x) = x\, + 2 
+f(x) = x\: + 2 
+f(x) = x\; + 2 
+f(x) = x\ + 2 
+f(x) = x\quad + 2 
+f(x) = x\qquad + 2
+```
+
+$$\\[0.4in]$$
+
+
+
+
+### Citations
+
+**Show citations as numbers inside parentheses**
+
+```
+library[numbers]{natbib}
+```
+
+**Show citations as numbers arranged in order of appearance in manuscript**
+
+```
+library[sort&compress,numbers]{natbib}
+\bibliographystyle{unsrtnat}
+```
+
+$$\\[0.4in]$$
+
+
+
+
+### Commandline utilities
+
+**Count of words in a LaTeX file**
+
+```
+texcount file.tex
+```
+
+**Latex to HTML**
+
+```
+htlatex mydocument.tex  
+```
+
+**LaTeX to word**
+
+```
+# using pandoc (not perfect)
+pandoc —mathjax —mathml file.tex -f latex -t docx -o file.docx
+```
+
+**Convert latex equation to word equation** ([Source](https://www.sauravag.com/2016/11/the-best-way-to-convert-latex-math-equations-into-word-equations/))
+
+Create an html file using the following script, including latex 
+equations. Then open it in browser. Right click on an equation, 
+select “Show math as”-> “MathML code”, copy the mathml code. Go to 
+word, insert new equation, paste the mathml code as text 
+(Cmd+ctrl+v). The equation will show.
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <title>tex texample</title>
+</head>
+<body>
+    $$ a = b $$
+</body>
+</html>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+$$\\[1in]$$
+
+
+
+
+
+$$\\[1in]$$
+
+
+    
+
+
+
+
