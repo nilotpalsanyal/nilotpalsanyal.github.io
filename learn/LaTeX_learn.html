@@ -1684,14 +1684,14 @@ size</strong></p>
 <p><strong>To define levels up to depth 100 after
 \subsubsection</strong></p>
 <pre><code>\makeatletter
-\newcommand\level[1]{%
+\newcommand\level[1]{
   \ifcase#1\relax\expandafter\chapter\or
     \expandafter\section\or
     \expandafter\subsection\or
     \expandafter\subsubsection\else
     \def\next{\@level{#1}}\expandafter\next
   \fi}
-\newcommand{\@level}[1]{%
+\newcommand{\@level}[1]{
   \@startsection{level#1}
     {#1}
     {\z@}%
@@ -1706,7 +1706,7 @@ size</strong></p>
 \loop\ifnum\count@&lt;100
   \begingroup\edef\x{\endgroup
     \noexpand\newcounter{level\number\numexpr\count@+1\relax}[level\number\count@]
-    \noexpand\@namedef{thelevel\number\numexpr\count@+1\relax}{%
+    \noexpand\@namedef{thelevel\number\numexpr\count@+1\relax}{
       \noexpand\@nameuse{thelevel\number\count@}.\noexpand\arabic{level\number\numexpr\count@+1\relax}}
     \noexpand\@namedef{level\number\numexpr\count@+1\relax mark}####1{}}
   \x
