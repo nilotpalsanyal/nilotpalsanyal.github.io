@@ -1,0 +1,286 @@
+---
+title: "Measure and probability: Part II"
+author: "Nilotpal Sanyal, Ph.D.  \n\n [https://nilotpalsanyal.github.io](https://nilotpalsanyal.github.io)"
+date: 
+output: 
+ html_document:
+  toc: yes
+  toc_depth: 3  
+  toc_float: TRUE        
+  number_sections: no   
+  # theme: united     
+  highlight: tango   
+urlcolor: blue
+citecolor: blue
+---
+
+<!-- # set the overall width of the HTML page -->
+<style type="text/css"> /* This sets the overall width of the HTML page */
+  .main-container {
+    /*max-width: 600px;   */
+    margin-left: auto;
+    margin-right: 10%;
+  }
+  body, td {
+     font-size: 18px;
+     /*font-family: Calibri;*/
+     background: rgb(250,250,250);
+  }
+  code.r{                   /*for r code*/
+    font-size: 16.5px;
+  }
+  pre {                 /*for output of knitr chunks*/
+    font-size: 16.5px
+    border: 0;
+  }
+  #TOC {
+  color: purple;
+  font-size: 15px; 
+  }
+  }
+</style>
+
+```{=latex}
+\usepackage{amsmath}
+```
+
+<hr>
+
+### Topological space
+
+A <span style="color:purple;">topological space</span> is the most general type of a mathematical space that allows for the definition of limits, continuity, and connectedness. Euclidean spaces, metric spaces and manifolds are specializations of topological space. 
+
+A <span style="color:purple;">topological space</span> is a set equipped with a mathematical structure called <span style="color:purple;">topology</span>. The elements of the set are called 'points'. There are two main and equivalent definitions of topology. Given any one, the other can be recovered. <br>
+
+#### <u>Definition based on open sets</u>
+
+***Using words:*** A topology on a set is a collection of subsets of the set, called <span style="color:purple;">open sets</span>, satisfying the following axioms.
+
+i. The collection includes the empty set and the set itself.
+
+ii. The collection is closed under arbitrary (finite or infinite) union.
+
+iii. The collection is closed under finite intersection.
+
+A subset of the set is defined to be a neighborhood of a point if the subset includes an open set containing the point.
+
+***Using mathematical symbols:*** A topology on a set $X$ is a collection, $\tau$, of subsets of the set, called open sets, satisfying the following axioms.
+
+i. $\tau$ includes the empty set and $X$ itself.
+
+ii. $\tau$ is closed under arbitrary (finite or infinite) union.
+
+iii. $\tau$ is closed under finite intersection.
+
+$N \subseteq X$ is defined to be a neighborhood of $x$ if the $N$ includes an open set $U$ such that $x \in U$.
+
+#### <u>Definition based on neighborhoods</u>
+
+***Using words:*** [Hausdorff] A (neighborhood) topology on a set is a function that assigns to each point of the set a non-empty collection of subsets of the set, each element of the collection being called a <span style="color:purple;">neighborhood</span> of the point, satisfying the following axioms.
+
+i. Each point itself belongs to every one of its neighborhoods.
+
+ii. Every superset of the neighborhood of a point in the set is again a neighborhood of the point.
+
+iii. The intersection of two neighborhoods of a point is a neighborhood of the point.
+
+iv. Any neighboorhood of a point contains a neighborhood of the point such that the first neighborhood is a neighborhood of each point of the second neighborhood.
+
+A subset of the set is defined to be open if the subset is a neighborhood of each of its points.
+
+***Using mathematical symbols:*** [Hausdorff] A (neighborhood) topology on a set $X$ is a function $\mathcal{N}$ that assigns to each point $x$ of $X$ a non-empty collection $\mathcal{N}(x)$ of subsets of $X$, each element of $\mathcal{N}(x)$ being called a <span style="color:purple;">neighborhood</span> of $x$, satisfying the following axioms.
+
+i. If $N \in \mathcal{N}(x)$, then $x \in N$.
+
+ii. If $N \in \mathcal{N}(x)$, $M \subseteq X$ and $M \supseteq N$, then $M \in \mathcal{N}(x)$.
+
+iii. If $N \in \mathcal{N}(x)$ and $M \in \mathcal{N}(x)$, then $N\cap M \in \mathcal{N}(x)$.
+
+iv. If $N \in \mathcal{N}(x)$, there exists $M \subseteq N$ such that $M \in \mathcal{N}(x)$ and for each $y \in M$, $N \in \mathcal{N}(y)$.
+
+$U \subseteq X$ is defined to be open if for all $x \in U$, $U \in \mathcal{N}(x)$.
+
+$$\\[0.1in]$$
+
+
+
+
+### Interior point, Interior
+
+***Using words:*** <br>
+[Open sets definition] An <span style="color:purple;">interior point</span> of a set is a point that is included in some open set contained in the set.
+
+[Neighborhoods definition] A point is an <span style="color:purple;">interior point</span> of a set if the set is a neighborhood of that point.
+
+The collection of all interior points of a set is called the <span style="color:purple;">interior</span> of the set.
+
+***Using mathematical symbols:***<br>
+[Open sets definition] An <span style="color:purple;">interior point</span> $x$ of a set $S$ is a point that is included in some open set contained in $S$.
+
+[Neighborhoods definition] A point $x$ is an <span style="color:purple;">interior point</span> of $S$ if $S \in \mathcal{N}(x)$.
+
+The collection of all interior points of a set $S$ is called the <span style="color:purple;">interior</span> of $S$.
+
+$$\\[0.1in]$$
+
+
+
+
+### Boundary point, boundary
+
+***Using words:*** <br>
+[Open sets definition] A <span style="color:purple;">boundary point</span> of a set is a point that is neither included in any open set contained in the set, nor included in any open set contained in the complement of the set.
+
+[Neighborhoods definition] A <span style="color:purple;">boundary point</span> of a set is a point, any neighborhood of which contains some point of the set and some point of the complement of the set. 
+
+The collection of all boundary points of a set is called the <span style="color:purple;">boundary</span> of the set.
+
+***Using mathematical symbols:***<br>
+[Open sets definition] A <span style="color:purple;">boundary point</span> $x$ of a set $S$ is a point that is neither included in any open set contained in $S$, nor included in any open set contained in $S^C$.
+
+[Neighborhoods definition] A <span style="color:purple;">boundary point</span> $x$ of a set $S$ is a point such that for all $N \in \mathcal{N}(x)$, $N \cap S \neq \emptyset$ and $N \cap S^C \neq \emptyset$. 
+
+The collection of all boundary points of $S$ is called the <span style="color:purple;">boundary</span> of $S$.
+
+$$\\[0.1in]$$
+
+
+
+
+### Exterior point, Exterior
+
+***Using words:*** <br>  
+[Open sets definition] An <span style="color:purple;">exterior point</span> of a set is a point that is included in some open set contained in the complement of the set.
+
+[Neighborhoods definition] An <span style="color:purple;">exterior point</span> of a set is a point, some neighborhood of which is contained in the complement of the set.
+
+The collection of all exterior points of a set is called the <span style="color:purple;">exterior</span> of the set.
+
+***Using mathematical symbols:***<br>
+[Open sets definition] An <span style="color:purple;">exterior point</span> $x$ of a set $S$ is a point that is included in some open set contained in $S^C$.
+
+[Neighborhoods definition] An <span style="color:purple;">exterior point</span> $x$ of a set $S$ is a point such that there exists $N \in \mathcal{x}$ where $N \subseteq S^C$.
+
+The collection of all exterior points of $S$ is called the <span style="color:purple;">exterior</span> of $S$.
+
+***Note:*** The interior, boundary and exterior of any set in a topological space constitute a partition of the topological space.
+
+$$\\[0.1in]$$
+
+
+
+
+### Limit point/ cluster point/ accumulation point 
+
+***Using words:***<br>
+[Open sets definition] A point is a <span style="color:purple;">limit point</span> or <span style="color:purple;">cluster point</span> or <span style="color:purple;">accumulation point</span> of a set if every open set containing the point contains a point of the set other than that point.
+
+[Neighborhoods definition] A point is a <span style="color:purple;">limit point</span> or <span style="color:purple;">cluster point</span> or <span style="color:purple;">accumulation point</span> of a set if any neighborhood of that point contains a point of the set other than itself.
+
+***Using mathematical symbols:***<br>
+[Open sets definition] A point $x$ is a <span style="color:purple;">limit point</span> or <span style="color:purple;">cluster point</span> or <span style="color:purple;">accumulation point</span> of a set $S$ if every open set containing $x$ contains a point of $S$ other than $x$.
+
+[Neighborhoods definition] A point $x$ is a <span style="color:purple;">limit point</span> or <span style="color:purple;">cluster point</span> or <span style="color:purple;">accumulation point</span> of a set $S$ if any neighborhood of $x$ contains a point of $S$ other than $x$.
+
+$$\\[0.1in]$$
+
+
+
+### Limit supremum and limit infimum of sets
+
+***Intuition:*** Consider a sequence of events. Each event is a set and the elements of that set are outcomes of a random experiment. So, different events are different groups of outcomes. We would like to find out in this sequence of events, which outcomes appear infinitely often (i.o.).
+
+$$\\[0.1in]$$
+
+
+
+### Slutsky's theorem
+
+
+
+
+### Borel-Cantelli Lemma
+
+
+
+
+### Glivenko-Cantelli Lemma
+
+
+
+
+### Fatou's Lemma
+
+
+
+
+### Heine-Borel Theorem
+
+
+
+
+### Khinchine WLLN
+
+
+
+
+### Chebyshev WLLN
+
+
+
+
+### Kolmogov SLLN
+
+
+
+
+### Lindeberg-Levy CLT
+
+
+
+
+### Lindeberg-Feller CLT
+
+
+
+
+### Radon-Nikodym Theorem
+
+
+
+
+### Fubini's Theorem
+
+
+
+
+### Hajek-Renyi Inequality
+
+
+
+
+### Kolmogov 0-1 Law
+
+
+
+
+### Bolzano-Weierstrass Theorem
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
