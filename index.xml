@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>  on </title>
-    <link>Users/nsanyal/Dropbox/MyPassport/Documents/GitHub/Website/</link>
+    <link>https://nilotpalsanyal.github.io/</link>
     <description>Recent content in   on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="Users/nsanyal/Dropbox/MyPassport/Documents/GitHub/Website/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://nilotpalsanyal.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blog</title>
-      <link>Users/nsanyal/Dropbox/MyPassport/Documents/GitHub/Website/blog/</link>
+      <link>https://nilotpalsanyal.github.io/blog/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>Users/nsanyal/Dropbox/MyPassport/Documents/GitHub/Website/blog/</guid>
+      <guid>https://nilotpalsanyal.github.io/blog/</guid>
       <description>Mangomatics
 Measure Theory and Probability: Part I
 List of Annals of Statistics articles</description>
@@ -19,10 +19,10 @@ List of Annals of Statistics articles</description>
     
     <item>
       <title>Blog-2</title>
-      <link>Users/nsanyal/Dropbox/MyPassport/Documents/GitHub/Website/blog-2/</link>
+      <link>https://nilotpalsanyal.github.io/blog-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>Users/nsanyal/Dropbox/MyPassport/Documents/GitHub/Website/blog-2/</guid>
+      <guid>https://nilotpalsanyal.github.io/blog-2/</guid>
       <description>Sanskrit words sounding close to some familiar English words
 Advaita I : Rope and snake
 Karmavada and Punarjanmavada (in Bengali)</description>
@@ -30,10 +30,10 @@ Karmavada and Punarjanmavada (in Bengali)</description>
     
     <item>
       <title>Contact / Connect</title>
-      <link>Users/nsanyal/Dropbox/MyPassport/Documents/GitHub/Website/contact/</link>
+      <link>https://nilotpalsanyal.github.io/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>Users/nsanyal/Dropbox/MyPassport/Documents/GitHub/Website/contact/</guid>
+      <guid>https://nilotpalsanyal.github.io/contact/</guid>
       <description>E-mail: nilotpal dot sanyal at gmail dot com
 LinkedIn profile
 GitHub profile
@@ -43,10 +43,10 @@ ResearchGate</description>
     
     <item>
       <title>Learn</title>
-      <link>Users/nsanyal/Dropbox/MyPassport/Documents/GitHub/Website/learn/</link>
+      <link>https://nilotpalsanyal.github.io/learn/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>Users/nsanyal/Dropbox/MyPassport/Documents/GitHub/Website/learn/</guid>
+      <guid>https://nilotpalsanyal.github.io/learn/</guid>
       <description>
 Here are some self-made precise guides for quick learning.
 Learn Rmarkdown Learn Git and GitHub management Learn some interesting R stuff Learn LaTeX </description>
@@ -54,19 +54,19 @@ Learn Rmarkdown Learn Git and GitHub management Learn some interesting R stuff L
     
     <item>
       <title>Links</title>
-      <link>Users/nsanyal/Dropbox/MyPassport/Documents/GitHub/Website/links/</link>
+      <link>https://nilotpalsanyal.github.io/links/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>Users/nsanyal/Dropbox/MyPassport/Documents/GitHub/Website/links/</guid>
+      <guid>https://nilotpalsanyal.github.io/links/</guid>
       <description>Bioinformatics / Biostatistics NCBI (National Center for Biotechnology Information) dbGaP (database of Genotypes and Phenotypes) GWAS Catalog NITRC (NeuroImaging Tools &amp;amp; Resources Collaboratory): Award-winning free web-based resource offering comprehensive information on an ever expanding scope of neuroinformatics software and data. Handbook of Biological Statistics - John H. McDonald Free online courses MIT OpenCourseWare (OCW): Web based publication of virtually all MIT course content, open and available to the world. Linear algebra A Geometrical Understanding of Matrices: Gregory Gundersen blog Affine transformations: Arcane Algorithm Archive Computer Mac keyboard shortcuts Sublime Text Regular Expression Cheat Sheet LaTeX accents Common Math Symbols in HTML, TeX, and Unicode Text to HTML Miscelleneous Scimago Journal &amp;amp; Country Rank Statistics and Probability Journals Convert DOI/ArXiv/ISBN to BibTeX, etc.</description>
     </item>
     
     <item>
       <title>Music</title>
-      <link>Users/nsanyal/Dropbox/MyPassport/Documents/GitHub/Website/music/</link>
+      <link>https://nilotpalsanyal.github.io/music/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>Users/nsanyal/Dropbox/MyPassport/Documents/GitHub/Website/music/</guid>
+      <guid>https://nilotpalsanyal.github.io/music/</guid>
       <description>&amp;ldquo;Music is perpetual, and only hearing is intermittent.&amp;rdquo; &amp;ndash; Henry David Thoreau♩
 &amp;ldquo;The music is not in the notes, but in the silence between.&amp;rdquo; &amp;ndash; Wolfgang Amadeus Mozart
 &amp;ldquo;After silence, that which comes nearest to expressing the inexpressible is music.&amp;rdquo; &amp;ndash; Aldous Huxley
@@ -75,10 +75,10 @@ Learn Rmarkdown Learn Git and GitHub management Learn some interesting R stuff L
     
     <item>
       <title>Musings</title>
-      <link>Users/nsanyal/Dropbox/MyPassport/Documents/GitHub/Website/musings/</link>
+      <link>https://nilotpalsanyal.github.io/musings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>Users/nsanyal/Dropbox/MyPassport/Documents/GitHub/Website/musings/</guid>
+      <guid>https://nilotpalsanyal.github.io/musings/</guid>
       <description>This page contains various fruits from reflections that you are free to find interesting, revealing or boring. Most of these are pitched at very general philosophical level of things.
 shuffle
 One must overcome the suffering from badness by being good. And the suffering from goodness by being unattached.
@@ -88,10 +88,10 @@ Wisdom lurks not in answers, neither in questions, but in seeing the utter inabi
     
     <item>
       <title>Poetry</title>
-      <link>Users/nsanyal/Dropbox/MyPassport/Documents/GitHub/Website/poetry/</link>
+      <link>https://nilotpalsanyal.github.io/poetry/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>Users/nsanyal/Dropbox/MyPassport/Documents/GitHub/Website/poetry/</guid>
+      <guid>https://nilotpalsanyal.github.io/poetry/</guid>
       <description>I love to read and write poetries, especially of experiential or philosophical nature, sometimes using allegories from nature and its wonders and motivations gleaned therefrom.
 Bartleby.com and Poetseers.org are my favorite websites for poetries.
 Some favorite verses are
@@ -103,20 +103,20 @@ Kali The Mother - Swami Vivekananda</description>
     
     <item>
       <title>Research</title>
-      <link>Users/nsanyal/Dropbox/MyPassport/Documents/GitHub/Website/research/</link>
+      <link>https://nilotpalsanyal.github.io/research/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>Users/nsanyal/Dropbox/MyPassport/Documents/GitHub/Website/research/</guid>
+      <guid>https://nilotpalsanyal.github.io/research/</guid>
       <description>Overview My research combines method development, data analysis and software development. I like to work in both the classical/frequentist and the Bayesian frameworks. I enjoy developing computationally efficient statistical/bio-statistical and machine learning methods and software for high-dimensional data. My research has found applications in public health, omics, epidemiology and neuroscience.
 Specific research areas Methods for gene by environment (GxE) interaction analysis. Such methods help to understand how environmental factors (say, pollution) and lifestyle factors (say, smoking) may modify the effect of genetic factors on the outcome (say, lung cancer).</description>
     </item>
     
     <item>
       <title>Science</title>
-      <link>Users/nsanyal/Dropbox/MyPassport/Documents/GitHub/Website/science/</link>
+      <link>https://nilotpalsanyal.github.io/science/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>Users/nsanyal/Dropbox/MyPassport/Documents/GitHub/Website/science/</guid>
+      <guid>https://nilotpalsanyal.github.io/science/</guid>
       <description>A self-prepared Quantum Theory timeline
 Feynmann Lectures on Physics
 Ponderable quotes from great scientists
@@ -126,20 +126,20 @@ Ponderable quotes from great scientists
     
     <item>
       <title>Software</title>
-      <link>Users/nsanyal/Dropbox/MyPassport/Documents/GitHub/Website/software/</link>
+      <link>https://nilotpalsanyal.github.io/software/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>Users/nsanyal/Dropbox/MyPassport/Documents/GitHub/Website/software/</guid>
+      <guid>https://nilotpalsanyal.github.io/software/</guid>
       <description>Here are some software packages that I have developed/co-developed based on my research.
 BHMSMAfMRI: This is an R software package that performs Bayesian hierarchical multi-subject multiscale analysis of function MRI (fMRI) data, or other multiscale data, as described in Sanyal &amp;amp; Ferreira (2012) using wavelet based prior that borrows strength across subjects and provides posterior smooth estimates of the effect sizes and samples from their posterior distribution. Description and download instructions are available at the package webpage at https://nilotpalsanyal.</description>
     </item>
     
     <item>
       <title>Teaching</title>
-      <link>Users/nsanyal/Dropbox/MyPassport/Documents/GitHub/Website/teaching/</link>
+      <link>https://nilotpalsanyal.github.io/teaching/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>Users/nsanyal/Dropbox/MyPassport/Documents/GitHub/Website/teaching/</guid>
+      <guid>https://nilotpalsanyal.github.io/teaching/</guid>
       <description>Some sample materials from past teaching/workshops:
 Penalized regression analysis for competing risks data: Concepts and data analysis.
 Random forest analysis for competing risks data: Concepts and data analysis.
@@ -151,10 +151,10 @@ Introduction to R and exercises.</description>
     
     <item>
       <title>Visual Art</title>
-      <link>Users/nsanyal/Dropbox/MyPassport/Documents/GitHub/Website/visualarts/</link>
+      <link>https://nilotpalsanyal.github.io/visualarts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>Users/nsanyal/Dropbox/MyPassport/Documents/GitHub/Website/visualarts/</guid>
+      <guid>https://nilotpalsanyal.github.io/visualarts/</guid>
       <description>&amp;ldquo;Art is never finished, only abandoned.&amp;rdquo; &amp;ndash; Leonard da Vinci
 &amp;ldquo;Art enables us to find ourselves and lose ourselves at the same time.&amp;rdquo; &amp;ndash; Thomas Merton
 &amp;ldquo;Art is either plagiarism or revolution.&amp;rdquo; &amp;ndash; Paul Gauguin
@@ -165,10 +165,10 @@ A few from my favorite artistic creations.</description>
     
     <item>
       <title>Wisdom</title>
-      <link>Users/nsanyal/Dropbox/MyPassport/Documents/GitHub/Website/wisdom/</link>
+      <link>https://nilotpalsanyal.github.io/wisdom/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>Users/nsanyal/Dropbox/MyPassport/Documents/GitHub/Website/wisdom/</guid>
+      <guid>https://nilotpalsanyal.github.io/wisdom/</guid>
       <description>&amp;ldquo;True philosophers are always occupied in the practice of dying.&amp;rdquo; &amp;ndash; Plato (in Apology: Socrates on Being Condemned to Death)
 &amp;ldquo;My religion is not deceiving myself.&amp;rdquo; &amp;ndash; Milarepa
 &amp;ldquo;Truth is not what you want it to be; it is what it is and you must bend to its power or live a lie.&amp;rdquo; &amp;ndash; Miyamoto Musashi
