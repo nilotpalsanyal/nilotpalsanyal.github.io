@@ -1507,8 +1507,12 @@ div.tocify {
   }
 </style>
 <hr>
-<p>Here’s a precise manual I put together for convenient learning of Git
-and GitHub <br>management and as an easy reference.</p>
+<p style="width:600px;">
+Here’s a precise manual I put together for convenient learning of Git
+and GitHub management and as an easy reference. Bookmark or re-download
+periodically as I will keep updating <a href="https://nilotpalsanyal.github.io/learn/Git_learn.html">this
+page</a> for improvement.
+</p>
 <hr>
 <p><span class="math display">\[\\[0.4in]\]</span></p>
 <div id="install-and-link-in-mac" class="section level3">
@@ -1590,8 +1594,8 @@ config text file)</em></p>
 background <br> <code>ssh-add ~/.ssh/id_ed25519</code></p>
 <p><span class="math display">\[\\[1in]\]</span></p>
 </div>
-<div id="repository" class="section level3">
-<h3>Repository</h3>
+<div id="repository-branch" class="section level3">
+<h3>Repository / Branch</h3>
 <p><strong>Connect a remote repository (URL) and give it an
 alias/nickname ‘origin’</strong></p>
 <p><code>git remote add origin https://github.com/nilotpalsanyal/GWASinlps.git</code>
@@ -1609,11 +1613,11 @@ system</strong></p>
 information</strong></p>
 <p><code>git remote -v</code> <br>
 <code>git remote show origin</code></p>
-<p><strong>Rename the remote alias ‘origin’ to ‘mynewalias’</strong></p>
-<p><code>git remote rename origin mynewalias</code></p>
+<p><strong>Rename the remote alias ‘origin’ to ‘newalias’</strong></p>
+<p><code>git remote rename origin newalias</code></p>
 <p><strong>Change the URL in the origin</strong></p>
 <p>git remote set-url origin newurl_here</p>
-<p><strong>Fetch commits from a remote repo/branch</strong> <br> (of a
+<p><strong>Fetch commits from a remote repo/branch</strong> <br> (for a
 connected repo locally aliased origin)</p>
 <p><code>git fetch origin</code> #fetches info about all branches of the
 remote</p>
@@ -1624,22 +1628,17 @@ given branch of the remote</p>
         repository. However, it does not merge them with your 
         current branch.</code></pre>
 <p><strong>Merge fetched commits from a remote branch with local
-branch</strong> <br> (from a connected repo locally aliased origin)</p>
+branch</strong> <br> (for a connected repo locally aliased origin)</p>
 <p><code>git merge origin branchname</code></p>
 <p><strong>Reset merge in case of conflict</strong></p>
 <p>git reset –merge</p>
-<p><strong>Pull files from a remote branch to local branch</strong>
-(from a connected repo locally aliased origin)</p>
+<p><strong>Pull files from a remote branch to local branch</strong> (for
+a connected repo locally aliased origin)</p>
 <p><code>git pull origin branchname</code></p>
 <pre><code>=&gt;NOTE: `pull` is `fetch` + `merge`.</code></pre>
 <p><strong>Push local branch files to a remote branch</strong> (of a
 connected repo)</p>
-<p><code>git push NS:nilotpalsanyal/BHMSMAfMRI main</code></p>
 <p><code>git push -u origin main</code></p>
-<p><span class="math display">\[\\[1in]\]</span></p>
-</div>
-<div id="branches" class="section level3">
-<h3>Branches</h3>
 <p><strong>See current branch</strong></p>
 <p><code>git branch --show-current</code></p>
 <pre><code>=&gt;NOTE: When inside a directory you initialize git with `git init`, the
@@ -1655,11 +1654,21 @@ connected repo)</p>
 <pre><code>=&gt;NOTE: You need to make at least one commit before you can see 
         branches listed by the `git branch` command. If no commit
         yet, can be seen only using --show-current option.</code></pre>
-<p><strong>Create a new local branch</strong></p>
+<p><strong>Create a new local branch with current branch
+files</strong></p>
 <p><code>git branch branchname</code></p>
+<p><strong>Create a new local branch with current branch files and move
+to it</strong></p>
+<p><code>git checkout -b branchname</code></p>
 <p><strong>Create a new local branch from a remote branch of repo
 origin</strong></p>
 <p><code>git branch newbranch origin/remotebranch</code></p>
+<p><strong>Delete a local branch</strong></p>
+<p>git branch -d branchname</p>
+<pre><code>=&gt;NOTE: You cannot delete a branch while using it. Have to move to another
+        branch first.</code></pre>
+<p><strong>Delete a remote branch</strong></p>
+<p><code>git push origin --delete branchname</code></p>
 <p><strong>Rename a branch</strong></p>
 <p><code>git branch -m AA</code> #renames the current branch as AA <br>
 <code>git branch -m BB CC</code> #renames branch BB as CC</p>
@@ -1679,7 +1688,7 @@ modification</strong></p>
 option</p>
 <p><strong>Place the modified file(s) in a staging area</strong></p>
 <p><code>git add filename</code> <br> <code>git add -f filename</code>
-#if filename is listed in ignore-list, you can add using -f <br>
+#if filename is listed in ignore-list, you can force add using -f <br>
 <code>git add .</code></p>
 <p><strong>Commit the change</strong></p>
 <p><code>git commit -m &quot;update&quot;</code></p>
@@ -1690,8 +1699,8 @@ option</p>
 <p>git commit –amend -m “New commit message”</p>
 <p><strong>Undo last commit</strong></p>
 <p>git reset HEAD~</p>
-<p><strong>Push(upload) to an existing branch</strong></p>
-<p><code>git push origin branchname</code><br></p>
+<p><strong>Push (upload) to an existing branch</strong></p>
+<p><code>git push origin branchname</code></p>
 <p><strong>Push (upload) to a new branch</strong></p>
 <p><code>git push origin NS:username/reponame branchname</code> #replace
 NS by your local host id</p>
@@ -1704,16 +1713,12 @@ NS by your local host id</p>
         it as a8-friendly alias for a commit hash. Due to the recent 
         &quot;Replacing master with main in GitHub&quot; action, you may notice that 
         there is a refs/heads/main.</code></pre>
-<p><strong>Delete a local branch</strong></p>
-<p>git branch -d branchname</p>
-<pre><code>=&gt;NOTE: You cannot delete a branch while using it. Have to move to another
-        branch first.</code></pre>
-<p><strong>Delete a remote branch</strong></p>
-<p><code>git push origin --delete branchname</code></p>
-<p><strong>Check files/folders in .gitignore list (these are not
-pushed)</strong></p>
-<p><code>git check-ignore *</code></p>
-<p><strong>Add/Remove files to/from ignore-list</strong></p>
+<p><strong>See files/ folders in .gitignore list (these are not tracked
+or pushed)</strong></p>
+<p><code>git check-ignore *</code> <br>
+<code>git check-ignore -v filename</code> #identify which pattern
+ignores filename</p>
+<p><strong>Add/ Remove files to/ from ignore-list</strong></p>
 <p><code>Simply edit the .gitignore file</code></p>
 <p><strong>After adding a file to ignore-list, remove it (previous
 uploads) from the remote</strong></p>
@@ -1723,10 +1728,29 @@ caches of this file from git, does not delete the file <br>
 now as it is in ignore-list <br>
 <code>git commit -m &quot;removed unwanted files&quot;</code> <br>
 <code>git push origin branchname</code></p>
-<p><strong>Pull a file from local branch Sub to local branch
-main</strong></p>
-<p>git checkout main git checkout Sub – filename</p>
-<p><span class="math display">\[\\[1in]\]</span></p>
+<p><strong>Pull a file from branch sub to current branch</strong></p>
+<p>git checkout sub filename</p>
+<p><strong>Create file/folder in one local branch, then transfer to
+another local branch</strong></p>
+<p><code>#create file/folder NEW</code> #in branch main <br>
+<code>git add NEW</code> #track it <br> <code>git stash</code> #store
+the changes in a separate space (NEW will vanish from main here)<br>
+<code>git switch branch2</code> #move to another branch <br>
+<code>git rm -r --cached NEWS</code> #remove previous caches of NEWS, if
+necessary <br> <code>git stash pop</code> #pick up the changes (NEW will
+drop here)<br> <code>git add . ; git commit -m &quot;bla&quot; ; git push</code>
+#push the changes<br> <code>git switch main</code> #come back to main
+branch. NEW will not be there.</p>
+<p><strong>Make changes, store separately, apply chosen
+ones</strong></p>
+<p><code>#make a change</code> #to a file <br> <code>git stash</code>
+#store change separately (file changed back after this) <br>
+<code>#make another change</code> <br> <code>git stash</code> #store
+change separately (file changed back after this) <br>
+<code>git stash list</code> #see list of stashes <br>
+<code>git stash apply</code> #apply to file changes from all stashes
+<br> <code>git stash apply 2</code> #apply to file changes from stash 2
+only <br> <code>git stash clear</code> #clear all stashes</p>
 </div>
 
 
