@@ -34,11 +34,14 @@ Karmavada and Punarjanmavada (in Bengali)</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://nilotpalsanyal.github.io/contact/</guid>
-      <description>E-mail: nilotpal dot sanyal at gmail dot com
+      <description>
+E-mail: nilotpal dot sanyal at gmail dot com
 LinkedIn profile
 GitHub profile
 Academia profile
-ResearchGate</description>
+ResearchGate
+Medium
+Hello world! </description>
     </item>
     
     <item>
@@ -108,7 +111,7 @@ Kali The Mother - Swami Vivekananda</description>
       
       <guid>https://nilotpalsanyal.github.io/research/</guid>
       <description>Overview My research combines method development, data analysis and software development. I like to work in both the classical/frequentist and the Bayesian frameworks. I enjoy developing computationally efficient statistical/bio-statistical and machine learning methods and software for high-dimensional data. My research has found applications in public health, omics, epidemiology and neuroscience.
-Specific research areas Methods for gene by environment (GxE) interaction analysis. Such methods help to understand how environmental factors (say, pollution) and lifestyle factors (say, smoking) may modify the effect of genetic factors on the outcome (say, lung cancer).</description>
+Specific research areas Methods for high-dimensional inference and variable selection. Such methods are extremely useful for sparse data that contain a large number of features (e.</description>
     </item>
     
     <item>
