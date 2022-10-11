@@ -1766,11 +1766,17 @@ sequence. Similarly, limit infimum can be understood.</p>
 supremum of the sequence, and the limit infimum is the eventual infimum
 of the sequence.</p>
 <p><strong><em>Definition in words:</em></strong> The <span style="color:purple;">limit supremum</span> or <span style="color:purple;">limit superior of a sequence of numbers</span> is
-the smallest number which is greater than or equal to infinitely many
-members of the sequence.</p>
+the smallest number that is greater than or equal to infinitely many
+members of the sequence. (Supremum is the least of all upper bounds of
+the whole sequence, limit supremum is the least of all upper bounds of
+infinitely many members of the sequence [upper bounds of only finitely
+many members don’t count.])</p>
 <p>The <span style="color:purple;">limit infimum</span> or <span style="color:purple;">limit inferior of a sequence of numbers</span> is
-the largest number which is smaller than or equal to infinitely many
-members of the sequence.</p>
+the largest number that is smaller than or equal to infinitely many
+members of the sequence. (Infimum is the greatest of all lower bounds of
+the whole sequence, limit infimum is the greatest of all lower bounds of
+infinitely many members of the sequence [lower bounds of only finitely
+many members don’t count.])</p>
 <p><strong><em>Definition using mathematical symbols:</em></strong> For
 a sequence of real numbers <span class="math inline">\(\{a_n\}\)</span>,
 the limit supremum and the limit infimum are respectively defined as</p>
@@ -1992,6 +1998,34 @@ g(x)\)</span> where <span class="math inline">\(g:\Omega \to
 d\mu.\]</span></p>
 <p><span class="math display">\[\\[0.1in]\]</span></p>
 </div>
+<div id="convergence-of-functions" class="section level3">
+<h3>Convergence of functions</h3>
+<p><strong><em>Definition in words:</em></strong></p>
+<p><strong>Pointwise convergence:</strong> A sequence of functions is
+said to converge pointwise to a certain function if for any given value
+of the argument and any given small number, there exists a natural
+number such that whenever the sequential index is greater than that
+natural number, the difference between the sequential function and that
+certain function evaluated at that argument is less than that small
+number.</p>
+<p><strong>Uniform convergence:</strong> A sequence of functions is said
+to converge uniformly to a certain function if for any given small
+number, there exists a natural number such that whenever the sequential
+index is greater than that natural number, the difference between the
+sequential function and that certain function is less than that small
+number for all values of the argument, or equivalently, the supremum of
+the difference between the sequential function and that certain function
+over all values of the argument is less than that small number.</p>
+<p><strong><em>Definition using mathematical symbols:</em></strong></p>
+<p><strong>Pointwise convergence:</strong> A sequence of functions <span class="math inline">\(f_n\)</span> is said to converge uniformly to a
+function <span class="math inline">\(f\)</span> if <span class="math display">\[\forall x \text{ and } \forall \epsilon&gt;0,
+\exists N \ni \forall n&gt;N, |f_n(x)-f(x)|&lt;\epsilon.\]</span></p>
+<p><strong>Uniform convergence:</strong> A sequence of functions <span class="math inline">\(f_n\)</span> is said to converge uniformly to a
+function <span class="math inline">\(f\)</span> if <span class="math display">\[\forall \epsilon&gt;0, \exists N \ni \forall
+n&gt;N, |f_n(x)-f(x)|&lt;\epsilon, \forall x,\]</span> or <span class="math display">\[\forall \epsilon&gt;0, \exists N \ni \forall
+n&gt;N, \sup_{x}|f_n(x)-f(x)|&lt;\epsilon.\]</span></p>
+<p><span class="math display">\[\\[0.1in]\]</span></p>
+</div>
 <div id="convergence-of-random-variables" class="section level3">
 <h3>Convergence of random variables</h3>
 <p><strong><em>Introduction:</em></strong> A random variable is
@@ -2062,9 +2096,11 @@ P(|X_k-X|\leq\epsilon,\forall\; k\geq n) = 1.\]</span></p>
 convergence tells <span class="math inline">\(X_n\)</span> does not
 equal <span class="math inline">\(X\)</span> for only a finite number of
 terms of the sequence after which all <span class="math inline">\(X_n\)</span> become equal to <span class="math inline">\(X\)</span>. But we don’t know that finite number
-and there is no way to know in practice. So, the difference between
-convergence in probability and almost sure convergence is more
-philosophical than practical.</p>
+and there is no way to know in practice. So, although almost sure
+convergence is stronger than convergence in probability, the difference
+between them is more philosophical than practical. Almost sure
+convergence is equivalent to point-wise convergence of sequence of
+ordinary functions.</p>
 <p><span class="math display">\[\\[0.1in]\]</span></p>
 </div>
 <div id="khinchine-wlln" class="section level3">
