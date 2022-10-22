@@ -99,7 +99,7 @@ $$\int \liminf_{n\to\infty} \; f_n d\mu \leq \liminf_{n\to\infty} \int f_n d\mu.
 
 ***Note:*** Fatou's lemma can be quickly remembered through the following image where the first two plots show individual integrals of two functions (shaded) and the last plot shows the integral of the limit infimum of the two functions (shaded). Even the smaller of the first two integrals is larger than the last one.
 
-![Fatou's lemma demonstration](fatou.png){width=60%}
+![Fatou's lemma demonstration](images/fatou.png){width=60%}
 
 ***Note:*** The functions are taken as non-negative so that the integrals exist, else there might be cases where integral becomes like $\infty-\infty$ which is not well-defined. 
 
@@ -413,11 +413,11 @@ $$\\[0.1in]$$
 
 
 
-### Kolmogov 0-1 Law
+<!-- ### Kolmogorov 0-1 Law
 
 ***Definition in words:*** 
 
-***Definition using mathematical symbols:*** 
+***Definition using mathematical symbols:***  -->
 
 $$\\[0.1in]$$
 
