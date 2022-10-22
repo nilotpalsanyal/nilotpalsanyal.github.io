@@ -8,10 +8,10 @@
     <language>en-us</language><atom:link href="https://nilotpalsanyal.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blog</title>
-      <link>https://nilotpalsanyal.github.io/blog/</link>
+      <link>https://nilotpalsanyal.github.io/blogr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://nilotpalsanyal.github.io/blog/</guid>
+      <guid>https://nilotpalsanyal.github.io/blogr/</guid>
       <description>Mangomatics
 Measure Theory and Probability: Part I
 List of Annals of Statistics articles</description>
@@ -19,10 +19,10 @@ List of Annals of Statistics articles</description>
     
     <item>
       <title>Blog-2</title>
-      <link>https://nilotpalsanyal.github.io/blog-2/</link>
+      <link>https://nilotpalsanyal.github.io/blogo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://nilotpalsanyal.github.io/blog-2/</guid>
+      <guid>https://nilotpalsanyal.github.io/blogo/</guid>
       <description>Sanskrit words sounding close to some familiar English words
 Advaita I : Rope and snake
 Karmavada and Punarjanmavada (in Bengali)</description>
@@ -60,7 +60,7 @@ Learn Rmarkdown Learn Git and GitHub management Learn some interesting R stuff L
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://nilotpalsanyal.github.io/links/</guid>
-      <description>Bioinformatics / Biostatistics NCBI (National Center for Biotechnology Information) dbGaP (database of Genotypes and Phenotypes) GWAS Catalog NITRC (NeuroImaging Tools &amp;amp; Resources Collaboratory): Award-winning free web-based resource offering comprehensive information on an ever expanding scope of neuroinformatics software and data. Handbook of Biological Statistics - John H. McDonald Linear algebra A Geometrical Understanding of Matrices: Gregory Gundersen blog Affine transformations: Arcane Algorithm Archive Computer Mac keyboard shortcuts Sublime Text Regular Expression Cheat Sheet LaTeX accents LaTeX Beamer themes Common Math Symbols in HTML, TeX, and Unicode Text to HTML Free online courses MIT OpenCourseWare (OCW): Web based publication of virtually all MIT course content, open and available to the world.</description>
+      <description>Bioinformatics / Biostatistics NCBI (National Center for Biotechnology Information) dbGaP (database of Genotypes and Phenotypes) GWAS Catalog NITRC (NeuroImaging Tools &amp;amp; Resources Collaboratory): Award-winning free web-based resource offering comprehensive information on an ever expanding scope of neuroinformatics software and data. Handbook of Biological Statistics - John H. McDonald Probability/Statistics/Linear algebra A History of the Central Limit Theorem - Hans Fischer A Geometrical Understanding of Matrices: Gregory Gundersen blog Affine transformations: Arcane Algorithm Archive Computer Mac keyboard shortcuts Sublime Text Regular Expression Cheat Sheet LaTeX accents LaTeX Beamer themes Common Math Symbols in HTML, TeX, and Unicode Text to HTML Free online courses MIT OpenCourseWare (OCW): Web based publication of virtually all MIT course content, open and available to the world.</description>
     </item>
     
     <item>
