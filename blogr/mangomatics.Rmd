@@ -35,7 +35,7 @@ citecolor: blue
 <hr>
 
 <div align="center">
-<img src="mangomatics.jpg" style="width:550px;" />
+<img src="images/mangomatics.jpg" style="width:550px;" />
 </div>
 <span style="font-size:10px;">source:https://www.deviantart.com/l33tm0b1l3/art/Disco-Superclub-32662937</span>
 <p>&nbsp;</p>

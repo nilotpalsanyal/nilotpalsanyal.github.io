@@ -48,7 +48,7 @@ citecolor: blue
 
 ### Set algebra
 
-<img align="right" src="Cantor_Georg.jpg" width="15%" />
+<img align="right" src="images/Cantor_Georg.jpg" width="15%" />
 
 <span style="color:purple;">Set algebra</span> or the algebra of sets (as a subject; not to be confused with the mathematical structure called algebra of sets) is a system that deals with the properties of sets, the laws of the set-theoretic operations of union, intersection and complementation, and the relations of set equality and set inclusion, and procedures for evaluating expressions using these laws.
 
@@ -63,7 +63,7 @@ A collection of sets is called a <span style="color:purple;">family of sets</spa
 
 $$\\[0.1in]$$
 
-<img align="right" src="Boole_George.jpg" width="15%" />
+<img align="right" src="images/Boole_George.jpg" width="15%" />
 
 
 
@@ -180,7 +180,7 @@ $$\\[0.1in]$$
 
 $$\\[0.1in]$$
 
-<img align="right" src="Borel_Emile.jpg" width="22%" />
+<img align="right" src="images/Borel_Emile.jpg" width="22%" />
 
 
 
@@ -251,7 +251,7 @@ If $X$ is a topological space, any measure defined over the Borel algebra $\math
 
 $$\\[0.1in]$$
 
-<img align="right" src="Carathéodory_Constantin.jpg" width="20%" />
+<img align="right" src="images/Carathéodory_Constantin.jpg" width="20%" />
 
 
 
@@ -340,7 +340,7 @@ where $|A|$ is the cardinality of $A$.
 
 $$\\[0.1in]$$
 
-<img align="right" src="Lebesgue_Henri.jpg" width="20%" />
+<img align="right" src="images/Lebesgue_Henri.jpg" width="20%" />
 
 
 
@@ -355,7 +355,7 @@ Since Caratheodory's work, Lebesgue measurability is obtained by restricting Leb
 
 $$\\[0.1in]$$
 
-<img align="right" src="Kolmogorov_Andrey.jpg" width="20%" />
+<img align="right" src="images/Kolmogorov_Andrey.jpg" width="20%" />
 
 
 
@@ -415,7 +415,7 @@ The triple $(\mathbb{R},\mathcal{B},P_X)$ is called the <span style="color:purpl
 
 $$\\[0.1in]$$
 
-<img align="right" src="Fréchet_Maurice.jpg" width="20%" />
+<img align="right" src="images/Fréchet_Maurice.jpg" width="20%" />
 
 
 
