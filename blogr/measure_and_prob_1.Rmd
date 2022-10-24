@@ -44,11 +44,13 @@ citecolor: blue
 \usepackage{amsmath}
 ```
 
+<font size=2>Source of the portrait images: [Wikipedia.org](Wikipedia.org) or [https://mathshistory.st-andrews.ac.uk/Biographies/](https://mathshistory.st-andrews.ac.uk/Biographies/)</font>
+
 <hr>
 
 ### Set algebra
 
-<img align="right" src="images/Cantor_Georg.jpg" width="15%" />
+<img align="right" src="images/Cantor_Georg_German.jpg" width="15%" />
 
 <span style="color:purple;">Set algebra</span> or the algebra of sets (as a subject; not to be confused with the mathematical structure called algebra of sets) is a system that deals with the properties of sets, the laws of the set-theoretic operations of union, intersection and complementation, and the relations of set equality and set inclusion, and procedures for evaluating expressions using these laws.
 
@@ -63,7 +65,7 @@ A collection of sets is called a <span style="color:purple;">family of sets</spa
 
 $$\\[0.1in]$$
 
-<img align="right" src="images/Boole_George.jpg" width="15%" />
+<img align="right" src="images/Boole_George_English.jpg" width="15%" />
 
 
 
@@ -180,7 +182,7 @@ $$\\[0.1in]$$
 
 $$\\[0.1in]$$
 
-<img align="right" src="images/Borel_Emile.jpg" width="22%" />
+<img align="right" src="images/Borel_Emile_French.jpg" width="22%" />
 
 
 
@@ -251,7 +253,7 @@ If $X$ is a topological space, any measure defined over the Borel algebra $\math
 
 $$\\[0.1in]$$
 
-<img align="right" src="images/Carathéodory_Constantin.jpg" width="20%" />
+<img align="right" src="images/Carathéodory_Constantin_Greek.jpg" width="20%" />
 
 
 
@@ -340,7 +342,7 @@ where $|A|$ is the cardinality of $A$.
 
 $$\\[0.1in]$$
 
-<img align="right" src="images/Lebesgue_Henri.jpg" width="20%" />
+<img align="right" src="images/Lebesgue_Henri_French.jpg" width="20%" />
 
 
 
@@ -355,7 +357,7 @@ Since Caratheodory's work, Lebesgue measurability is obtained by restricting Leb
 
 $$\\[0.1in]$$
 
-<img align="right" src="images/Kolmogorov_Andrey.jpg" width="20%" />
+<img align="right" src="images/Kolmogorov_Andrey_Russian.jpg" width="20%" />
 
 
 
@@ -415,7 +417,7 @@ The triple $(\mathbb{R},\mathcal{B},P_X)$ is called the <span style="color:purpl
 
 $$\\[0.1in]$$
 
-<img align="right" src="images/Fréchet_Maurice.jpg" width="20%" />
+<img align="right" src="images/Fréchet_Maurice_French.jpg" width="20%" />
 
 
 
@@ -460,7 +462,7 @@ $$\\[0.1in]$$
 
 - If the index set is a $\sigma$-algebra over subsets of some space, the random function is a <span style="color:purple;">random measure</span> (which is discussed below specifically). <br>
 
-An equivalent definition is, given a probability space, a <span style="color:purple;">random function</span> is a mesurable function from the product space of the sample space and an index set to the real line, which means, it is a function two variables. 
+An equivalent definition is, given a probability space, a <span style="color:purple;">random function</span> is a mesurable function from the product space of the sample space and an index set to the real line, which means, it is a function of two variables. 
 
 - If the first variable is fixed to a particular value, the random function becomes a particular function from the index set to the real line. Such functions are called <span style="color:purple;">sample functions</span> or <span style="color:purple;">realizations of the random variable</span>, and for one-dimensional index set, are also called <span style="color:purple;">sample paths</span> or <span style="color:purple;">trajectories</span> of the random process. With different choices of the second variable, the random function becomes different types of random elements as described above. 
 
@@ -482,7 +484,7 @@ An equivalent definition is, given a probability space, a <span style="color:pur
 
 An equivalent definition is that, given a probability space $(\Omega,\mathcal{F},P)$ and an index set $T$, a <span style="color:purple;">random function</span>, $X$, is a function of two variables, taking values $\{X(\omega,t)=X_t(\omega):\omega \in \Omega,t \in T \}$, such that $X:\Omega \times T \to \mathbb{R}$.
 
-If $\omega$ is fixed, $X$ becomes a function $X(w):T \to \mathbb{R}$, and is called a <span style="color:purple;">sample function</span> or a <span style="color:purple;">realization of the random variable</span>, and for one-dimensional $T$, is also called a <span style="color:purple;">sample path</span> or a <span style="color:purple;">trajectory</span> of the random process $X$. If $t$ is fixed, $X$ becomes a random variable $X_t:\Omega \to \mathbb{R}$.
+If $\omega$ is fixed, $X$ becomes a function $X(\omega):T \to \mathbb{R}$, and is called a <span style="color:purple;">sample function</span> or a <span style="color:purple;">realization of the random variable</span>, and for one-dimensional $T$, is also called a <span style="color:purple;">sample path</span> or a <span style="color:purple;">trajectory</span> of the random process $X$. If $t$ is fixed, $X$ becomes a random variable $X_t:\Omega \to \mathbb{R}$.
 
 ***Note:*** A random function is called so not because it is a function, but because it maps to a space of ‘functions’.
 

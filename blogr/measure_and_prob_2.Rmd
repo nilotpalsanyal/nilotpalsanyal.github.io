@@ -44,7 +44,11 @@ citecolor: blue
 \usepackage{amsmath}
 ```
 
+<font size=2>Source of the portrait images: [Wikipedia.org](Wikipedia.org) or [https://mathshistory.st-andrews.ac.uk/Biographies/](https://mathshistory.st-andrews.ac.uk/Biographies/)</font>
+
 <hr>
+
+<img align="right" src="images/Borel_Emile_French.jpg" width="22%" />
 
 ### Borel-Cantelli Lemma
 
@@ -55,6 +59,7 @@ citecolor: blue
 
 $$\\[0.1in]$$
 
+<img align="right" src="images/Cantelli_Francesco_Italian.jpg" width="22%" />
 
 
 
@@ -70,6 +75,8 @@ $$\\[0.1in]$$
 
 
 ### Slutsky's theorem
+
+<img align="right" src="images/Slutsky_Eugen_Russian.jpg" width="22%" />
 
 ***Intuition:*** <span style="color:purple;">Slutsky's theorem</span> extends the results of some algebraic operations on real sequences to sequences of random variables.
 
@@ -89,6 +96,8 @@ $$\\[0.1in]$$
 
 
 ### Fatou's Lemma
+
+<img align="right" src="images/Fatou_Pierre_French.jpeg" width="22%" />
 
 ***Intuition*** Fatou's lemma, monotone convergence theorem and dominated convergence theorem--three main results in Lebesgue integration theory--tell when the two operations, limit and integration, may or may not commute.
 
@@ -110,10 +119,13 @@ $$\\[0.1in]$$
 
 ### Monotone convergence theorem
 
+<img align="right" src="images/Levi_Beppo_Italian.jpg" width="22%" />
+
 ***Definition in words:*** For a sequence of non-negative and non-decreasing measurable functions defined on a measure space with a Lebesgue measure, the <span style="color:purple;">monotone convergence theorem</span> states that (with respect to the measure) the limit of the individual integrals of the functions is equal to the integral of the (pointwise) limit of the functions where the latter limit exists because of non-negativity and monotonicity and is equal to some real number or infinity.
 
 ***Definition using mathematical symbols:*** For a sequence of measurable functions, $f_n$, defined on a measure space $(\Omega,\mathcal{F},\mu)$, $\mu$ being a Lebesgue measure, such that $f_n:\Omega \to [0,\infty]$ and $f_k(x)\leq f_{k+1}(x) \; \forall k \text{ and } \forall x$, the <span style="color:purple;">monotone convergence theorem</span> states that
 $$\lim_{n\to\infty} \int f_n \; d\mu = \int \lim_{n\to\infty} \; f_n \; d\mu.$$
+This version is due to Beppo levi.
 
 $$\\[0.1in]$$
 
@@ -121,6 +133,8 @@ $$\\[0.1in]$$
 
 
 ### Dominated convergence theorem
+
+<img align="right" src="images/Lebesgue_Henri_French.jpg" width="22%" />
 
 ***Definition in words:*** If a sequence of measurable functions defined on a measure space with a Lebesgue measure is such that the sequence converges pointwise to a certain function and is dominated by some integrable function in the sense that the absolute values of all the functions are bounded above by the values of the integrable function, then the <span style="color:purple;">dominated convergence theorem</span> states, (with respect to the measure) that certain function is integrable and the limit of the individual integrals of the functions of the sequence is equal to the integral of that certain function.
 
@@ -174,6 +188,8 @@ $$\\[0.1in]$$
 
 ### Markov's inequality
 
+<img align="right" src="images/Markov_Andrey_Russian.jpg" width="22%" />
+
 ***Definition in words:*** For a Lebesgue-integrable random variable with finite expected value, <span style="color:purple;">Markov's inequality</span> (or <span style="color:purple;">first Chebyshev's inequality</span>) states that the upper bound of the probability of a non-negative random variable being greater than or equal to a constant is the expected value divided by that constant.
 
 ***Definition using mathematical symbols:*** For a Lebesgue-integrable random variable $X$ with finite expected value $\mu$, <span style="color:purple;">Markov's inequality</span> states that 
@@ -185,6 +201,8 @@ $$\\[0.1in]$$
 
 ### Chebyshev's inequality
 
+<img align="right" src="images/Chebyshev_Pafnuty_Russian.jpg" width="22%" />
+
 ***Definition in words:*** For a Lebesgue-integrable random variable with finite expected value and finite non-zero variance, <span style="color:purple;">Chebyshev's inequality</span> (or <span style="color:purple;">second Chebyshev's inequality</span>) or <span style="color:purple;">Bienaymé's inequality</span> states that no more than $1/k^2$ of its distribution's values may lie k or more standard deviation away from the expected value.
 
 ***Definition using mathematical symbols:*** For a Lebesgue-integrable random variable $X$ with finite expected value $\mu$ and finite non-zero variance $\sigma^2$, 
@@ -195,6 +213,8 @@ $$\\[0.1in]$$
 
 
 ### Khinchin WLLN
+
+<img align="right" src="images/Khinchin_Aleksandr_Russian.gif" width="22%" />
 
 ***Definition in words:*** For a sequence of independent and identically distributed Lebesgue measurable random variables, the <span style="color:purple;">(Khinchin's) weak law of large numbers</span> states that the mean of the random variables will converge in probability to the expected value.
 
@@ -225,6 +245,8 @@ $$\\[0.1in]$$
 
 ### Kolmogorov's SLLN
 
+<img align="right" src="images/Kolmogorov_Andrey_Russian.jpg" width="22%" />
+
 ***Definition in words:*** For a sequence of independent and identically distributed Lebesgue measurable random variables, the <span style="color:purple;">(Kolmogorov's) strong law of large numbers</span> states that the mean of the random variables will converge almost surely to the expected value.
 
 ***Definition using mathematical symbols:*** For a sequence of independent and identically distributed Lebesgue measurable random variables $X_n$ with common mean $\mu$, the <span style="color:purple;">(Kolmogorov's) strong law of large numbers</span> states that 
@@ -235,6 +257,8 @@ $$\\[0.1in]$$
 
 
 ### Glivenko-Cantelli Theorem
+
+<img align="right" src="images/Glivenko_Valery_Russian.jpg" width="22%" />
 
 ***Note:*** For empirical distribution function, the Glivenko-Cantelli theorem shows that the SLLN holds not merely in the usual pointwise sense, but in the uniform sense.
 
@@ -248,6 +272,8 @@ $$\\[0.1in]$$
 
 
 ### Classical/Lindeberg-Levy CLT
+
+<img align="right" src="images/Levy_Paul_French.jpg" width="22%" />
 
 ***Intuition:*** Convergence in probability corresponds to WLLN, almost sure convergence corresponds to SLLN, convergence in distribution corresponds to CLT.
 
@@ -265,6 +291,8 @@ $$\\[0.1in]$$
 
 
 ### Lyapunov CLT
+
+<img align="right" src="images/Lyapunov_Alexander_Russian.jpg" width="22%" />
 
 ***Intuition:*** Classical CLT holds for iid random variables. For only independent random variables, Lyapunov proved (1901) that CLT holds under Lyapunov condition that required existence of moments of order 2+$\delta$. However, for some random variables, moments of order higher than 2 may not exist. Lindeberg proved (1928) that CLT, in fact, holds under a weaker but sufficient condition known as Lindeberg condition. Later, Feller proved (1936) that if Feller condition holds, Lindeberg condition is also a necessary condition for CLT.
 
@@ -286,6 +314,8 @@ $$\\[0.1in]$$
 
 ###  Lindeberg CLT
 
+<img align="right" src="images/Lindeberg_Jerl_Finnish.jpg" width="22%" />
+
 ***Note:*** Lindeberg condition is weaker than Lyapunov condition, but even with Lindeberg condition the above CLT holds.
 
 ***Definition in words:*** For a sequence of independent random variables with individual expected values and variances, the <span style="color:purple;">Lindeberg CLT</span> states that the sum of the difference between the random variables and their expected values when standardized by the square root of the sum of their variances converges in distribution to the standard normal distribution, provided the Lindeberg condition regarding its moments is satisfied.
@@ -305,6 +335,8 @@ $$\\[0.1in]$$
 
 ### Lindeberg-Feller CLT
 
+<img align="right" src="images/Feller_William_Croatian-American.jpeg" width="22%" />
+
 ***Intuition:*** If Lindeberg condition holds, CLT holds (sufficiency). But if CLT holds, we cannot say Lindeberg condition holds (no necessity). However, if CLT holds and Feller condition holds, then Lindeberg condition must also hold. 
 
 ***Definition in words:*** For a sequence of independent random variables with common expected value zero (for simplicity) and individual variances, the <span style="color:purple;">Lindeberg-Feller CLT</span> states that (a) CLT holds (i.e., the sum of the difference between the random variables and their expected values when standardized by the square root of the sum of their variances converges in distribution to the standard normal distribution) and Feller condition holds, i.e., none of the variances dominates the sum of the variances if and only if (b) the Lindeberg condition holds.
@@ -318,6 +350,10 @@ $$\\[0.1in]$$
 
 
 ### Radon-Nikodym Theorem
+
+<img align="right" src="images/Radon_Johann_Austrian.jpg" width="18%" />   
+
+<img align="right" src="images/Nikodym_Otton_Polish.jpeg" width="18%" />
 
 ***Intuition:*** Radon-Nikodym theorem describes relationship between two measures defined on the same measurable space. 
 
@@ -335,9 +371,13 @@ $$\\[0.1in]$$
 
 ### Fubini's (and Tonelli's) Theorem
 
+<img align="right" src="images/Fubini_Guido_Italian.jpg" width="18%" />
+
 ***Intuition:*** Fubini's theorem and Tonelli's theorem are mostly used together in practice so that sometimes both of them are referred to by Fubini's theorem. They are combined as Fubini-Tonelli theorem. Tonelli's part shows a non-negative functions are absolutely integrable w.r.t. a product measure and Fubini's part shows absolutely integrable functions are integrable w.r.t. a product measure.
 
 ***Definition in words:*** <span style="color:purple;">Fubini's theorem</span> says that a double integral of a measurable function with respect to the product measure of two sigma-finite measures equals an iterated integral with respect to the measures if the double integral is absolutely integrable with respect to that product measure.
+
+<img align="right" src="images/Tonelli_Leonida_Italian.jpg" width="18%" />
 
 <span style="color:purple;">Tonelli's theorem</span> says that a double integral of a non-negative measurable function with respect to the product measure of two sigma-finite measures equals an iterated integral with respect to the measures.
 
@@ -389,6 +429,10 @@ $$\\[0.1in]$$
 
 ***Note:*** Hajek-Renyi inequality is a generalization of Kolmogorov's inequality.
 
+<img align="right" src="images/Renyi_Alfred_Hungarian.jpeg" width="18%" />
+
+<img align="right" src="images/Hajek_Jaroslav_Czech.jpg" width="22%" /> <br>
+
 ***Definition using mathematical symbols:*** For a sequence of independent random variables $X_n$ with $E(X_k)=0$ and $V(X_k)<\infty$ and a sequence of non-decreasing positive real numbers $b_n$, <span style="color:purple;">Hajek-Renyi inequality</span> says that if $S_k=X_1+...+X_k$, then for any $\epsilon>0$,
 $$
 P\left( \max_{1\leq k \leq n} \left|{S_k \over b_n}\right| \geq \epsilon \right) \leq {1\over \epsilon^2} \left( \sum_{j=1}^m {E(X_j^2) \over b_m^2} + \sum_{j=m+1}^n {E(X_j^2) \over b_j^2} \right).
@@ -399,6 +443,8 @@ $$\\[0.1in]$$
 
 
 ### Le Cam's Inequality
+
+<img align="right" src="images/Le_Cam_Lucien_French.jpg" width="22%" />
 
 ***Intuition:*** Le Cam's inequality provides an upper bound of the error of approximating the distribution of a sum of Bernoulli random variables by a Poisson distribution.
 
