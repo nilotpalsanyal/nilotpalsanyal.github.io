@@ -434,11 +434,6 @@ $$\\[0.1in]$$
 
 - If $E=\mathbb{R}$, $X$ is a random variable.
 
-- If $E=\mathbb{R^n}$, $X$ is a random vector.
-
-- If $E=\mathbb{R}$, $X$ is a random variable.
-
-
 $$\\[0.1in]$$
 
 
@@ -472,7 +467,7 @@ An equivalent definition is, given a probability space, a <span style="color:pur
 
 - If $T$ is finite, $X$ is a <span style="color:purple;">random vector</span>.
 
-- If $T$ = \mathbb{N}, $X$ is a random <span style="color:purple;">sequence</span>.
+- If $T = \mathbb{N}$, $X$ is a <span style="color:purple;">random sequence</span>.
 
 - If $T$ is a matrix, $X$ is a <span style="color:purple;">random matrix</span>.
 
@@ -510,13 +505,8 @@ There are two equivalent definitions.
 > The theory has often been developed under various metric or topological assumptions, although such a structure plays no role, except in the context of weak convergence."
 
 
-
-
-
-
-
-
-
+$$\\[0.2in]$$
+<font size=2>(If you see any mistake or typo in this page, kindly email me at nilotpal dot sanyal at gmail dot com.)</font>
 
 
 

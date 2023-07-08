@@ -275,7 +275,7 @@ $$\\[0.1in]$$
 
 <img align="right" src="images/Levy_Paul_French.jpg" width="22%" />
 
-***Intuition:*** Convergence in probability corresponds to WLLN, almost sure convergence corresponds to SLLN, convergence in distribution corresponds to CLT.
+***Intuition:*** WLLN corresponds to convergence in probability , SLLN corresponds to almost sure convergence, CLT corresponds to convergence in distribution.
 
 (from wiki) The central limit theorem (CLT) establishes that, in many situations, when independent random variables are summed up, their properly normalized sum tends toward a normal distribution even if the original variables themselves are not normally distributed. The central limit theorem has several variants. In its common form, the random variables must be iid.
 
@@ -284,7 +284,7 @@ SLLN tells that the sample average of a random (therefore, iid) sample almost su
 ***Definition in words:*** For a sequence of independent and identically distributed random variables with common expected value and common variance, the <span style="color:purple;">classical/Lindeberg-Levy CLT</span> states that the difference between the sample average and the expected value when multiplied by the square root of the sample size converges in distribution to the normal distribution with mean 0 and variance equal to that common variance.
 
 ***Definition using mathematical symbols:*** For a sequence of independent and identically distributed random variables $X_n$ with common expected value $\mu$ and common variance $\sigma^2<\infty$, the <span style="color:purple;">classical/Lindeberg-Levy CLT</span> states that
-$$\sqrt{n}(\overline{X}_n - \mu) \overset{a}{\sim} N(0,\sigma^2).$$
+$$\sqrt{n}(\overline{X}_n - \mu) \overset{L}{\to} X \sim N(0,\sigma^2), \text{ or } \sqrt{n}(\overline{X}_n - \mu) \overset{a}{\sim} N(0,\sigma^2)$$
 
 $$\\[0.1in]$$
 
@@ -305,7 +305,7 @@ $$
 $$
 then
 $$
-{1 \over s_n} \sum _{i=1}^{n}\left(X_{i}-\mu _{i}\right)\ \xrightarrow {d} \ N(0,1).
+{1 \over s_n} \sum _{i=1}^{n}\left(X_{i}-\mu _{i}\right)\ \xrightarrow {L} X \sim \ N(0,1).
 $$
 
 $$\\[0.1in]$$
@@ -326,7 +326,7 @@ $$
 $$
 then
 $$
-{1 \over s_n} \sum _{i=1}^{n}\left(X_{i}-\mu _{i}\right)\ \xrightarrow {d} \ N(0,1).
+{1 \over s_n} \sum _{i=1}^{n}\left(X_{i}-\mu _{i}\right)\ \xrightarrow {L} X \sim \ N(0,1).
 $$
 
 $$\\[0.1in]$$
@@ -342,7 +342,7 @@ $$\\[0.1in]$$
 ***Definition in words:*** For a sequence of independent random variables with common expected value zero (for simplicity) and individual variances, the <span style="color:purple;">Lindeberg-Feller CLT</span> states that (a) CLT holds (i.e., the sum of the difference between the random variables and their expected values when standardized by the square root of the sum of their variances converges in distribution to the standard normal distribution) and Feller condition holds, i.e., none of the variances dominates the sum of the variances if and only if (b) the Lindeberg condition holds.
 
 ***Definition using mathematical symbols:*** For a sequence of independent random variables $X_n$ with $E(X_n)=0$ and variances $\sigma_n^2$, the <span style="color:purple;">Lindeberg-Feller CLT</span> states that if $s_n^2 = \sum_{i=1}^n \sigma^2$, then 
-$${\sum _{i=1} X_i \over s_n} \overset{d}{\to} N(0,1) \text{ and } \max_{1\leq i \leq n} {\sigma_i^2 \over s_n^2} \to 0 \text{ as } n \to \infty$$
+$${\sum _{i=1} X_i \over s_n} \overset{L}{\to} X \sim N(0,1) \text{ and } \max_{1\leq i \leq n} {\sigma_i^2 \over s_n^2} \to 0 \text{ as } n \to \infty$$
 if and only if the Lindeberg condition holds. 
 
 $$\\[0.1in]$$
@@ -361,7 +361,7 @@ $$\\[0.1in]$$
 
 ***Definition using mathematical symbols:*** The <span style="color:purple;">Radon-Nikodym theorem</span> states that for two $\sigma$-finite measures $\mu$ and $\nu$ defined on a measurable space $(\Omega,\mathcal{F})$ such that $\mu \ll \nu$, there exists a non-negative measurable function $f$, denoted by $f={d\mu \over d\nu}$, such that 
 $$
-\forall A \subset X, \quad \mu(A) = \int_A f\;d\nu.
+\forall A \subset \Omega, \quad \mu(A) = \int_A f\;d\nu.
 $$ 
 The function $f$ is called the <span style="color:purple;">Radon-Nikodym derivative</span>.
 
@@ -373,7 +373,7 @@ $$\\[0.1in]$$
 
 <img align="right" src="images/Fubini_Guido_Italian.jpg" width="18%" />
 
-***Intuition:*** Fubini's theorem and Tonelli's theorem are mostly used together in practice so that sometimes both of them are referred to by Fubini's theorem. They are combined as Fubini-Tonelli theorem. Tonelli's part shows a non-negative functions are absolutely integrable w.r.t. a product measure and Fubini's part shows absolutely integrable functions are integrable w.r.t. a product measure.
+***Intuition:*** Fubini's theorem and Tonelli's theorem are mostly used together in practice so that sometimes both of them are referred to by Fubini's theorem. They are combined as Fubini-Tonelli theorem. Tonelli's part shows non-negative functions are absolutely integrable w.r.t. a product measure and Fubini's part shows absolutely integrable functions are integrable w.r.t. a product measure.
 
 ***Definition in words:*** <span style="color:purple;">Fubini's theorem</span> says that a double integral of a measurable function with respect to the product measure of two sigma-finite measures equals an iterated integral with respect to the measures if the double integral is absolutely integrable with respect to that product measure.
 
@@ -394,7 +394,7 @@ $$
 
 <span style="color:purple;">Tonelli's theorem</span> says that for a product measure $X \times Y$ of $\sigma$-finite measures $X$ and $Y$, if $f$ is a non-negative measurable function then
 $$
-\int_{X\times Y} |f(x,y)|\; d(x,y) = \int_X\left( \int_Y |f(x,y)|\;dy \right) dx = \int_Y\left( \int_X |f(x,y)|\;dx \right) dy.
+\int_{X\times Y} f(x,y)\; d(x,y) = \int_X\left( \int_Y f(x,y)\;dy \right) dx = \int_Y\left( \int_X f(x,y)\;dx \right) dy.
 $$
 
 The <span style="color:purple;">Fubini-Tonelli theorem</span> says that for a product measure $X \times Y$ of $\sigma$-finite measures $X$ and $Y$, if $f$ is a measurable function, then
@@ -405,6 +405,8 @@ and further, if any one of the above integrals is finite, then
 $$
 \int_{X\times Y} f(x,y)\; d(x,y) = \int_X\left( \int_Y f(x,y)\;dy \right) dx = \int_Y\left( \int_X f(x,y)\;dx \right) dy.
 $$
+
+For a visualization, see this [video](https://www.youtube.com/watch?v=BCpgxXvP4tE).
 
 $$\\[0.1in]$$
 
@@ -433,7 +435,7 @@ $$\\[0.1in]$$
 
 <img align="right" src="images/Hajek_Jaroslav_Czech.jpg" width="22%" /> <br>
 
-***Definition using mathematical symbols:*** For a sequence of independent random variables $X_n$ with $E(X_k)=0$ and $V(X_k)<\infty$ and a sequence of non-decreasing positive real numbers $b_n$, <span style="color:purple;">Hajek-Renyi inequality</span> says that if $S_k=X_1+...+X_k$, then for any $\epsilon>0$,
+***Definition using mathematical symbols:*** For a sequence of independent random variables $X_n$ with $E(X_k)=0$ and $V(X_k)<\infty$ and a sequence of non-decreasing positive real numbers $b_n$, <span style="color:purple;">Hajek-Renyi inequality</span> says that if $S_k=X_1+...+X_k$, then for any $\epsilon>0$ and any positive integer $m<n$,
 $$
 P\left( \max_{1\leq k \leq n} \left|{S_k \over b_n}\right| \geq \epsilon \right) \leq {1\over \epsilon^2} \left( \sum_{j=1}^m {E(X_j^2) \over b_m^2} + \sum_{j=m+1}^n {E(X_j^2) \over b_j^2} \right).
 $$
@@ -448,7 +450,7 @@ $$\\[0.1in]$$
 
 ***Intuition:*** Le Cam's inequality provides an upper bound of the error of approximating the distribution of a sum of Bernoulli random variables by a Poisson distribution.
 
-***Definition in words:*** For a sequence of independent Bernoulli random variables with invidual success probabilities, <span style="color:purple;">Le Cam's inequality</span> says that the sum of the absolute differences between the probability of a partial sum up to an index and the pmf of a Poisson distribution with rate equal to the partial sum of the corresponding success probabilities is bounded above two times the sum of squares of the success probabilities.
+***Definition in words:*** For a sequence of independent Bernoulli random variables with invidual success probabilities, <span style="color:purple;">Le Cam's inequality</span> says that the sum of the absolute differences between the probability of a partial sum up to an index and the pmf of a Poisson distribution with rate equal to the partial sum of the corresponding success probabilities is bounded above by two times the sum of squares of the success probabilities.
 
 ***Definition using mathematical symbols:*** For a sequence of independent Bernoulli random variables $X_n$ with success probabilities $p_n$, <span style="color:purple;">Le Cam's inequality</span> says that, if $S_n=X_1+...+X_n$ and $\lambda_n=p_1+...+p_n$, then
 $$
@@ -468,8 +470,8 @@ $$\\[0.1in]$$
 
 ***Definition using mathematical symbols:***  -->
 
-$$\\[0.1in]$$
-
+$$\\[0.2in]$$
+<font size=2>(If you see any mistake or typo in this page, kindly email me at nilotpal dot sanyal at gmail dot com.)</font>
 
 
 

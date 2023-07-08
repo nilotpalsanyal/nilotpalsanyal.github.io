@@ -1512,6 +1512,7 @@ page</a> for improvement.
 
 % class beamer for presentations
 \documentclass{beamer}
+\documentclass[t]{beamer}  % aligns text on top of the page
 
 % class memoir for fiction, non-fiction and mathematical books  
 \documentclass[17pt,twoside,onecolumn,extrafontsizes]{memoir}
@@ -1550,6 +1551,24 @@ page</a> for improvement.
 \begin{landscape}
 …
 \end{landscape}</code></pre>
+<p><span class="math display">\[\\[0.4in]\]</span></p>
+</div>
+<div id="beamer-presentation" class="section level3">
+<h3>Beamer presentation</h3>
+<p><strong>Title page</strong></p>
+<pre><code>\title{}
+\date{\today \vspace{-5pt}}
+\author[Nilotpal Sanyal]{Nilotpal Sanyal}
+\institute[ISI, Kolkata]{Indian Statistical Institute, Kolkata}
+\titlegraphic{\hspace{-212pt}\vspace*{-10pt}\includegraphics[width=0.5\textwidth]{mallat_coverpic.jpg}}
+\logo{\includegraphics[width=25pt]{ISI_logo.png}}
+
+\begin{document}
+\frame[plain]{\titlepage} </code></pre>
+<p><strong>Add frame</strong></p>
+<pre><code>\frame{ \frametitle{}
+
+}</code></pre>
 <p><span class="math display">\[\\[0.4in]\]</span></p>
 </div>
 <div id="line-and-paragraph-settings" class="section level3">
@@ -1724,6 +1743,8 @@ begin{abstract}</strong></p>
 </div>
 <div id="figures" class="section level3">
 <h3>Figures</h3>
+<p><strong>Move a figure to left</strong></p>
+<pre><code>\hspace*{-2cm}\begin{tabular}....</code></pre>
 <p><strong>Wrap text around figure</strong></p>
 <pre><code>\usepackage{wrapfig}
 \begin{wrapfigure}[lineheight]{position}{width}
